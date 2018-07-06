@@ -2,21 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9083520d-b9ff-4dc1-bd1b-1036df08af65" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PDFxReadersourcing.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/assembly/test-jar-with-dependencies.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/it/medialab/pdfxreadersourcing/program/Program.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/it/medialab/pdfxreadersourcing/program/ProgramTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/it/medialab/pdfxreadersourcing/publications/PublicationController.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/it/medialab/pdfxreadersourcing/publications/PublicationModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/it/medialab/pdfxreadersourcing/publications/PublicationView.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Universita/Tesi/Magistrale/NewBestSub/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Universita/Tesi/Magistrale/NewBestSub/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Universita/Tesi/Magistrale/NewBestSub/NewBestSub.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Universita/Tesi/Magistrale/NewBestSub/NewBestSub.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Universita/Tesi/Magistrale/NewBestSub/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Universita/Tesi/Magistrale/NewBestSub/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Universita/Tesi/Magistrale/NewBestSub/src/main/assembly/test-jar-with-dependencies.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/assembly/test-jar-with-dependencies.xml" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -43,46 +33,28 @@
     <expand />
     <select />
   </component>
-  <component name="DockManager">
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-            <file pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/../../../Universita/Tesi/Magistrale/NewBestSub/pom.xml">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="-85">
-                    <caret line="289" column="21" selection-start-line="289" selection-start-column="21" selection-end-line="289" selection-end-column="21" />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-  </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-1553839385">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
-          <entry key="project.open.time.0" value="1" />
+          <entry key="project.closed" value="6" />
+          <entry key="project.open.time.0" value="4" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.11" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.open.time.16" value="1" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="kt" value="93" />
+          <entry key="kt" value="183" />
           <entry key="txt" value="95" />
           <entry key="xml" value="267" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Kotlin" value="93" />
+          <entry key="Kotlin" value="183" />
           <entry key="PLAIN_TEXT" value="95" />
           <entry key="XML" value="267" />
         </counts>
@@ -90,49 +62,21 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="iml" value="1" />
-          <entry key="kt" value="5" />
-          <entry key="xml" value="5" />
+          <entry key="kt" value="10" />
+          <entry key="xml" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="Kotlin" value="5" />
-          <entry key="XML" value="5" />
+          <entry key="Kotlin" value="10" />
+          <entry key="XML" value="6" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
-              <caret line="126" column="64" selection-start-line="126" selection-start-column="64" selection-end-line="126" selection-end-column="64" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/kotlin/it/medialab/pdfxreadersourcing/program/ProgramTest.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="40" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/it/medialab/pdfxreadersourcing/program/Program.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -154,6 +98,9 @@
         <option value="$PROJECT_DIR$/src/main/kotlin/it/medialab/pdfxreadersourcing/program/Program.kt" />
         <option value="$PROJECT_DIR$/src/test/kotlin/it/medialab/pdfxreadersourcing/program/ProgramTest.kt" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/it/medialab/pdfxreadersourcing/publications/PublicationModel.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/it/medialab/pdfxreadersourcing/publications/PublicationView.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/it/medialab/pdfxreadersourcing/publications/PublicationController.kt" />
       </list>
     </option>
   </component>
@@ -162,6 +109,13 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:/Program Files/apache-maven-3.5.4" />
+      </MavenGeneralSettings>
+    </option>
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
@@ -194,296 +148,64 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectUserFactors">
-    <factor id="binaryFeature:liftShorter">
-      <dailyData date="6-7-2018">
-        <observation name="false" value="18,0" />
-      </dailyData>
-    </factor>
-    <factor id="binaryFeature:liftShorterClasses">
-      <dailyData date="6-7-2018">
-        <observation name="UNDEFINED" value="18,0" />
-      </dailyData>
-    </factor>
-    <factor id="binaryFeature:middleMatching">
-      <dailyData date="6-7-2018">
-        <observation name="false" value="17,0" />
-        <observation name="true" value="1,0" />
-      </dailyData>
-    </factor>
-    <factor id="binaryFeature:nonGeneric">
-      <dailyData date="6-7-2018">
-        <observation name="UNDEFINED" value="18,0" />
-      </dailyData>
-    </factor>
-    <factor id="binaryFeature:prox_inResolveScope">
-      <dailyData date="6-7-2018">
-        <observation name="UNDEFINED" value="16,0" />
-        <observation name="false" value="1,0" />
-        <observation name="true" value="1,0" />
-      </dailyData>
-    </factor>
-    <factor id="binaryFeature:prox_openedInEditor">
-      <dailyData date="6-7-2018">
-        <observation name="UNDEFINED" value="16,0" />
-        <observation name="false" value="1,0" />
-        <observation name="true" value="1,0" />
-      </dailyData>
-    </factor>
-    <factor id="binaryFeature:prox_sameDirectory">
-      <dailyData date="6-7-2018">
-        <observation name="UNDEFINED" value="16,0" />
-        <observation name="false" value="1,0" />
-        <observation name="true" value="1,0" />
-      </dailyData>
-    </factor>
-    <factor id="binaryFeature:prox_sameLogicalRoot">
-      <dailyData date="6-7-2018">
-        <observation name="UNDEFINED" value="16,0" />
-        <observation name="false" value="2,0" />
-      </dailyData>
-    </factor>
-    <factor id="binaryFeature:prox_sdkOrLibrary">
-      <dailyData date="6-7-2018">
-        <observation name="UNDEFINED" value="16,0" />
-        <observation name="false" value="2,0" />
-      </dailyData>
-    </factor>
-    <factor id="binaryFeature:templates">
-      <dailyData date="6-7-2018">
-        <observation name="false" value="18,0" />
-      </dailyData>
-    </factor>
-    <factor id="categoricalFeature:accessible">
-      <dailyData date="6-7-2018">
-        <observation name="UNDEFINED" value="18,0" />
-      </dailyData>
-    </factor>
-    <factor id="categoricalFeature:expectedType">
-      <dailyData date="6-7-2018">
-        <observation name="UNDEFINED" value="18,0" />
-      </dailyData>
-    </factor>
-    <factor id="categoricalFeature:kind">
-      <dailyData date="6-7-2018">
-        <observation name="UNDEFINED" value="18,0" />
-      </dailyData>
-    </factor>
-    <factor id="categoricalFeature:prox_groovyReferenceListWeigher">
-      <dailyData date="6-7-2018">
-        <observation name="UNDEFINED" value="16,0" />
-        <observation name="unknown" value="2,0" />
-      </dailyData>
-    </factor>
-    <factor id="categoricalFeature:prox_javaInheritance">
-      <dailyData date="6-7-2018">
-        <observation name="UNDEFINED" value="16,0" />
-        <observation name="null" value="2,0" />
-      </dailyData>
-    </factor>
-    <factor id="categoricalFeature:prox_referenceList">
-      <dailyData date="6-7-2018">
-        <observation name="UNDEFINED" value="16,0" />
-        <observation name="unknown" value="2,0" />
-      </dailyData>
-    </factor>
-    <factor id="categoricalFeature:recursion">
-      <dailyData date="6-7-2018">
-        <observation name="UNDEFINED" value="18,0" />
-      </dailyData>
-    </factor>
+    <factor id="binaryFeature:liftShorter" />
+    <factor id="binaryFeature:liftShorterClasses" />
+    <factor id="binaryFeature:middleMatching" />
+    <factor id="binaryFeature:nonGeneric" />
+    <factor id="binaryFeature:prox_inResolveScope" />
+    <factor id="binaryFeature:prox_openedInEditor" />
+    <factor id="binaryFeature:prox_sameDirectory" />
+    <factor id="binaryFeature:prox_sameLogicalRoot" />
+    <factor id="binaryFeature:prox_sdkOrLibrary" />
+    <factor id="binaryFeature:templates" />
+    <factor id="categoricalFeature:accessible" />
+    <factor id="categoricalFeature:expectedType" />
+    <factor id="categoricalFeature:kind" />
+    <factor id="categoricalFeature:prox_groovyReferenceListWeigher" />
+    <factor id="categoricalFeature:prox_javaInheritance" />
+    <factor id="categoricalFeature:prox_referenceList" />
+    <factor id="categoricalFeature:recursion" />
     <factor id="completionFinishedType">
       <dailyData date="6-7-2018">
-        <observation name="cancelled" value="85,0" />
-        <observation name="explicitSelect" value="14,0" />
-        <observation name="typedSelect" value="4,0" />
+        <observation name="cancelled" value="13,0" />
       </dailyData>
     </factor>
     <factor id="completionType">
       <dailyData date="6-7-2018">
-        <observation name="BASIC" value="28,0" />
+        <observation name="BASIC" value="4,0" />
       </dailyData>
     </factor>
     <factor id="completionUsage">
       <dailyData date="6-7-2018">
-        <observation name="count" value="103,0" />
+        <observation name="count" value="13,0" />
       </dailyData>
     </factor>
-    <factor id="doubleFeature:explicitProximity">
-      <dailyData date="6-7-2018">
-        <observation name="average" value="0,0" />
-        <observation name="count" value="35,0" />
-        <observation name="max" value="0,0" />
-        <observation name="min" value="0,0" />
-        <observation name="variance" value="0,0" />
-      </dailyData>
-    </factor>
-    <factor id="doubleFeature:grouping">
-      <dailyData date="6-7-2018">
-        <observation name="average" value="0,0" />
-        <observation name="count" value="35,0" />
-        <observation name="max" value="0,0" />
-        <observation name="min" value="0,0" />
-        <observation name="variance" value="0,0" />
-      </dailyData>
-    </factor>
-    <factor id="doubleFeature:mostUsed">
-      <dailyData date="6-7-2018">
-        <observation name="UNDEFINED" value="18,0" />
-      </dailyData>
-    </factor>
-    <factor id="doubleFeature:nameEnd">
-      <dailyData date="6-7-2018">
-        <observation name="UNDEFINED" value="18,0" />
-      </dailyData>
-    </factor>
-    <factor id="doubleFeature:position">
-      <dailyData date="6-7-2018">
-        <observation name="average" value="0,228571" />
-        <observation name="count" value="35,0" />
-        <observation name="max" value="2,0" />
-        <observation name="min" value="0,0" />
-        <observation name="variance" value="0,351534" />
-      </dailyData>
-    </factor>
-    <factor id="doubleFeature:prefix">
-      <dailyData date="6-7-2018">
-        <observation name="average" value="-1146,685714" />
-        <observation name="count" value="35,0" />
-        <observation name="max" value="-1003,0" />
-        <observation name="min" value="-1202,0" />
-        <observation name="variance" value="1252,755664" />
-      </dailyData>
-    </factor>
-    <factor id="doubleFeature:priority">
-      <dailyData date="6-7-2018">
-        <observation name="average" value="0,057143" />
-        <observation name="count" value="35,0" />
-        <observation name="max" value="1,0" />
-        <observation name="min" value="0,0" />
-        <observation name="variance" value="0,049299" />
-      </dailyData>
-    </factor>
-    <factor id="doubleFeature:prox_explicitlyImported">
-      <dailyData date="6-7-2018">
-        <observation name="UNDEFINED" value="16,0" />
-        <observation name="average" value="200,0" />
-        <observation name="count" value="3,0" />
-        <observation name="max" value="300,0" />
-        <observation name="min" value="0,0" />
-        <observation name="variance" value="5000,0" />
-      </dailyData>
-    </factor>
-    <factor id="doubleFeature:prox_knownElement">
-      <dailyData date="6-7-2018">
-        <observation name="UNDEFINED" value="16,0" />
-        <observation name="average" value="0,0" />
-        <observation name="count" value="3,0" />
-        <observation name="max" value="0,0" />
-        <observation name="min" value="0,0" />
-        <observation name="variance" value="0,0" />
-      </dailyData>
-    </factor>
-    <factor id="doubleFeature:prox_sameModule">
-      <dailyData date="6-7-2018">
-        <observation name="UNDEFINED" value="16,0" />
-        <observation name="average" value="1,333333" />
-        <observation name="count" value="3,0" />
-        <observation name="max" value="2,0" />
-        <observation name="min" value="0,0" />
-        <observation name="variance" value="0,222222" />
-      </dailyData>
-    </factor>
-    <factor id="doubleFeature:prox_samePsiMember">
-      <dailyData date="6-7-2018">
-        <observation name="UNDEFINED" value="16,0" />
-        <observation name="average" value="0,0" />
-        <observation name="count" value="3,0" />
-        <observation name="max" value="0,0" />
-        <observation name="min" value="0,0" />
-        <observation name="variance" value="0,0" />
-      </dailyData>
-    </factor>
-    <factor id="doubleFeature:query_length">
-      <dailyData date="6-7-2018">
-        <observation name="average" value="0,0" />
-        <observation name="count" value="35,0" />
-        <observation name="max" value="0,0" />
-        <observation name="min" value="0,0" />
-        <observation name="variance" value="0,0" />
-      </dailyData>
-    </factor>
-    <factor id="doubleFeature:result_length">
-      <dailyData date="6-7-2018">
-        <observation name="average" value="8,085714" />
-        <observation name="count" value="35,0" />
-        <observation name="max" value="18,0" />
-        <observation name="min" value="4,0" />
-        <observation name="variance" value="8,596184" />
-      </dailyData>
-    </factor>
-    <factor id="doubleFeature:sameWords">
-      <dailyData date="6-7-2018">
-        <observation name="UNDEFINED" value="18,0" />
-      </dailyData>
-    </factor>
-    <factor id="doubleFeature:shorter">
-      <dailyData date="6-7-2018">
-        <observation name="UNDEFINED" value="18,0" />
-      </dailyData>
-    </factor>
-    <factor id="doubleFeature:simple">
-      <dailyData date="6-7-2018">
-        <observation name="UNDEFINED" value="18,0" />
-      </dailyData>
-    </factor>
-    <factor id="doubleFeature:sorter">
-      <dailyData date="6-7-2018">
-        <observation name="average" value="1,0" />
-        <observation name="count" value="35,0" />
-        <observation name="max" value="1,0" />
-        <observation name="min" value="1,0" />
-        <observation name="variance" value="0,0" />
-      </dailyData>
-    </factor>
-    <factor id="doubleFeature:statics">
-      <dailyData date="6-7-2018">
-        <observation name="UNDEFINED" value="18,0" />
-      </dailyData>
-    </factor>
-    <factor id="doubleFeature:stats">
-      <dailyData date="6-7-2018">
-        <observation name="average" value="5713,257143" />
-        <observation name="count" value="35,0" />
-        <observation name="max" value="10000,0" />
-        <observation name="min" value="0,0" />
-        <observation name="variance" value="14626110,851379" />
-      </dailyData>
-    </factor>
-    <factor id="itemPosition">
-      <dailyData date="6-7-2018">
-        <observation name="0" value="12,0" />
-        <observation name="2" value="2,0" />
-      </dailyData>
-    </factor>
-    <factor id="mnemonicsUsage">
-      <dailyData date="6-7-2018">
-        <observation name="total" value="11,0" />
-        <observation name="withMnemonics" value="1,0" />
-      </dailyData>
-    </factor>
-    <factor id="prefixLength">
-      <dailyData date="6-7-2018">
-        <observation name="1" value="3,0" />
-        <observation name="2" value="5,0" />
-        <observation name="3" value="2,0" />
-        <observation name="4" value="3,0" />
-        <observation name="7" value="1,0" />
-      </dailyData>
-    </factor>
+    <factor id="doubleFeature:explicitProximity" />
+    <factor id="doubleFeature:grouping" />
+    <factor id="doubleFeature:mostUsed" />
+    <factor id="doubleFeature:nameEnd" />
+    <factor id="doubleFeature:position" />
+    <factor id="doubleFeature:prefix" />
+    <factor id="doubleFeature:priority" />
+    <factor id="doubleFeature:prox_explicitlyImported" />
+    <factor id="doubleFeature:prox_knownElement" />
+    <factor id="doubleFeature:prox_sameModule" />
+    <factor id="doubleFeature:prox_samePsiMember" />
+    <factor id="doubleFeature:query_length" />
+    <factor id="doubleFeature:result_length" />
+    <factor id="doubleFeature:sameWords" />
+    <factor id="doubleFeature:shorter" />
+    <factor id="doubleFeature:simple" />
+    <factor id="doubleFeature:sorter" />
+    <factor id="doubleFeature:statics" />
+    <factor id="doubleFeature:stats" />
+    <factor id="itemPosition" />
+    <factor id="mnemonicsUsage" />
+    <factor id="prefixLength" />
     <factor id="timeBetweenTyping">
       <dailyData date="6-7-2018">
-        <observation name="average" value="195,129032" />
-        <observation name="count" value="31,0" />
+        <observation name="average" value="344,44186" />
+        <observation name="count" value="43,0" />
       </dailyData>
     </factor>
   </component>
@@ -492,13 +214,11 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
-            <path>
-              <item name="PDFxReadersourcing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NewBestSub" type="462c0819:PsiDirectoryNode" />
-            </path>
             <path>
               <item name="PDFxReadersourcing" type="b2602c69:ProjectViewProjectNode" />
               <item name="PDFxReadersourcing" type="462c0819:PsiDirectoryNode" />
@@ -518,43 +238,53 @@
               <item name="PDFxReadersourcing" type="b2602c69:ProjectViewProjectNode" />
               <item name="PDFxReadersourcing" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PDFxReadersourcing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PDFxReadersourcing" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="kotlin" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PDFxReadersourcing" type="b2602c69:ProjectViewProjectNode" />
               <item name="PDFxReadersourcing" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="pdfxreadersourcing" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PDFxReadersourcing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PDFxReadersourcing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="pdfxreadersourcing" type="462c0819:PsiDirectoryNode" />
               <item name="program" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PDFxReadersourcing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PDFxReadersourcing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="pdfxreadersourcing" type="462c0819:PsiDirectoryNode" />
+              <item name="publications" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1530886144921" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1530887726138" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Universita/Tesi/Magistrale/NewBestSub/pom.xml" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.4977064" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
+    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -853,28 +583,39 @@
       <updated>1530812225221</updated>
       <workItem from="1530812231488" duration="285000" />
       <workItem from="1530879308837" duration="2933000" />
-      <workItem from="1530882274765" duration="3141000" />
+      <workItem from="1530882274765" duration="3402000" />
+      <workItem from="1530886245686" duration="22000" />
+      <workItem from="1530886388698" duration="17000" />
+      <workItem from="1530886412691" duration="630000" />
+      <workItem from="1530887087969" duration="635000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="Test - 2018.07.06 at 16h 07m 16s.xml">
+      <configuration name="Test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Test - 2018.07.06 at 16h 07m 32s.xml">
+      <configuration name="Test" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6359000" />
+    <option name="totallyTimeSpent" value="7924000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Nl-Palette" order="0" />
       <window_info id="Image Layers" order="1" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
-      <window_info id="Structure" order="5" sideWeight="0.44555873" side_tool="true" visible="true" weight="0.15991472" />
+      <window_info id="Structure" order="5" sideWeight="0.4493882" side_tool="true" visible="true" weight="0.14605543" />
       <window_info id="Favorites" order="6" sideWeight="0.4053452" side_tool="true" weight="0.20010729" />
-      <window_info content_ui="combo" id="Project" order="7" sideWeight="0.5544413" visible="true" weight="0.15991472" />
+      <window_info active="true" content_ui="combo" id="Project" order="7" sideWeight="0.5506118" visible="true" weight="0.14605543" />
       <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.3544776" weight="0.17797554" />
       <window_info anchor="bottom" id="Messages" order="1" sideWeight="0.46723953" weight="0.2932862" />
-      <window_info active="true" anchor="bottom" x="21" y="414" width="1878" height="222" id="Run" order="2" sideWeight="0.4099147" visible="true" weight="0.22358176" />
+      <window_info anchor="bottom" x="21" y="414" width="1878" height="222" id="Run" order="2" sideWeight="0.4099147" weight="0.22358176" />
       <window_info anchor="bottom" id="TODO" order="3" sideWeight="0.4936034" weight="0.18278302" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" sideWeight="0.48933902" weight="0.32628062" />
@@ -888,7 +629,7 @@
       <window_info anchor="right" id="Palette&#9;" order="1" />
       <window_info anchor="right" id="Capture Analysis" order="2" />
       <window_info anchor="right" id="Properties" order="3" />
-      <window_info anchor="right" id="Maven Projects" order="4" sideWeight="0.49797022" visible="true" weight="0.13752665" />
+      <window_info anchor="right" id="Maven Projects" order="4" sideWeight="0.49797022" visible="true" weight="0.09488273" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Commander" order="6" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
@@ -913,9 +654,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
           <caret line="34" column="50" lean-forward="true" selection-end-line="321" />
-          <folding>
-            <element signature="e#37#482#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -926,34 +664,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../../Universita/Tesi/Magistrale/NewBestSub/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-85">
-          <caret line="289" column="21" selection-start-line="289" selection-start-column="21" selection-end-line="289" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/assembly/test-jar-with-dependencies.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/it/medialab/pdfxreadersourcing/program/Program.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/assembly/test-jar-with-dependencies.xml" />
     <entry file="file://$PROJECT_DIR$/../../../Universita/Tesi/Magistrale/NewBestSub/src/test/kotlin/it/uniud/newbestsub/dataset/DatasetModelTest.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding>
-            <element signature="e#37#236#0" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../Universita/Tesi/Magistrale/NewBestSub/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="289" column="21" selection-start-line="289" selection-start-column="21" selection-end-line="289" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="114" column="11" lean-forward="true" selection-start-line="114" selection-start-column="11" selection-end-line="114" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -964,10 +693,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/it/medialab/pdfxreadersourcing/program/Program.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="126" column="64" selection-start-line="126" selection-start-column="64" selection-end-line="126" selection-end-column="64" />
+        <state relative-caret-position="238">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/it/medialab/pdfxreadersourcing/publications/PublicationModel.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/it/medialab/pdfxreadersourcing/publications/PublicationView.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="27" selection-start-column="27" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/it/medialab/pdfxreadersourcing/publications/PublicationController.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
         </state>
       </provider>
     </entry>
