@@ -1,11 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9083520d-b9ff-4dc1-bd1b-1036df08af65" name="Default Changelist" comment="" />
+    <list default="true" id="9083520d-b9ff-4dc1-bd1b-1036df08af65" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PDFxReadersourcing.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assembly/test-jar-with-dependencies.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/it/medialab/pdfxreadersourcing/program/Program.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/it/medialab/pdfxreadersourcing/program/ProgramTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Universita/Tesi/Magistrale/NewBestSub/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Universita/Tesi/Magistrale/NewBestSub/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Universita/Tesi/Magistrale/NewBestSub/NewBestSub.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Universita/Tesi/Magistrale/NewBestSub/NewBestSub.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Universita/Tesi/Magistrale/NewBestSub/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Universita/Tesi/Magistrale/NewBestSub/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Universita/Tesi/Magistrale/NewBestSub/src/main/assembly/test-jar-with-dependencies.xml" beforeDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/../../../Universita/Tesi/Magistrale/NewBestSub/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,45 +43,116 @@
     <expand />
     <select />
   </component>
+  <component name="DockManager">
+    <window id="1">
+      <content type="file-editors">
+        <state>
+          <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+            <file pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/../../../Universita/Tesi/Magistrale/NewBestSub/pom.xml">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="-85">
+                    <caret line="289" column="21" selection-start-line="289" selection-start-column="21" selection-end-line="289" selection-end-column="21" />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-1553839385">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.10" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.11" value="1" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="txt" value="17" />
-          <entry key="xml" value="3" />
+          <entry key="kt" value="93" />
+          <entry key="txt" value="95" />
+          <entry key="xml" value="267" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="17" />
-          <entry key="XML" value="3" />
+          <entry key="Kotlin" value="93" />
+          <entry key="PLAIN_TEXT" value="95" />
+          <entry key="XML" value="267" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="iml" value="1" />
+          <entry key="kt" value="5" />
+          <entry key="xml" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="IDEA_MODULE" value="1" />
+          <entry key="Kotlin" value="5" />
+          <entry key="XML" value="5" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="35" lean-forward="true" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+            <state relative-caret-position="359">
+              <caret line="126" column="64" selection-start-line="126" selection-start-column="64" selection-end-line="126" selection-end-column="64" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/kotlin/it/medialab/pdfxreadersourcing/program/ProgramTest.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="40" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/it/medialab/pdfxreadersourcing/program/Program.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin File" />
+        <option value="Kotlin Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/src/main/assembly/test-jar-with-dependencies.xml" />
+        <option value="$PROJECT_DIR$/src/main/assembly/jar-with-dependencies.xml" />
+        <option value="$PROJECT_DIR$/../../../Universita/Tesi/Magistrale/NewBestSub/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/it/medialab/pdfxreadersourcing/program/Program.kt" />
+        <option value="$PROJECT_DIR$/src/test/kotlin/it/medialab/pdfxreadersourcing/program/ProgramTest.kt" />
         <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
@@ -85,6 +173,11 @@
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="PDFxReadersourcing" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="PDFxReadersourcing" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Run Configurations" type="21c1f71a:MavenProjectsStructure$RunConfigurationsNode" />
         </path>
       </expand>
@@ -97,260 +190,300 @@
     <option name="width" value="1940" />
     <option name="height" value="1060" />
   </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectUserFactors">
     <factor id="binaryFeature:liftShorter">
-      <dailyData date="5-7-2018">
-        <observation name="false" value="3,0" />
+      <dailyData date="6-7-2018">
+        <observation name="false" value="18,0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:liftShorterClasses">
-      <dailyData date="5-7-2018">
-        <observation name="UNDEFINED" value="3,0" />
+      <dailyData date="6-7-2018">
+        <observation name="UNDEFINED" value="18,0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:middleMatching">
-      <dailyData date="5-7-2018">
-        <observation name="false" value="3,0" />
+      <dailyData date="6-7-2018">
+        <observation name="false" value="17,0" />
+        <observation name="true" value="1,0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:nonGeneric">
-      <dailyData date="5-7-2018">
-        <observation name="UNDEFINED" value="3,0" />
+      <dailyData date="6-7-2018">
+        <observation name="UNDEFINED" value="18,0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:prox_inResolveScope">
-      <dailyData date="5-7-2018">
-        <observation name="UNDEFINED" value="3,0" />
+      <dailyData date="6-7-2018">
+        <observation name="UNDEFINED" value="16,0" />
+        <observation name="false" value="1,0" />
+        <observation name="true" value="1,0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:prox_openedInEditor">
-      <dailyData date="5-7-2018">
-        <observation name="UNDEFINED" value="3,0" />
+      <dailyData date="6-7-2018">
+        <observation name="UNDEFINED" value="16,0" />
+        <observation name="false" value="1,0" />
+        <observation name="true" value="1,0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:prox_sameDirectory">
-      <dailyData date="5-7-2018">
-        <observation name="UNDEFINED" value="3,0" />
+      <dailyData date="6-7-2018">
+        <observation name="UNDEFINED" value="16,0" />
+        <observation name="false" value="1,0" />
+        <observation name="true" value="1,0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:prox_sameLogicalRoot">
-      <dailyData date="5-7-2018">
-        <observation name="UNDEFINED" value="3,0" />
+      <dailyData date="6-7-2018">
+        <observation name="UNDEFINED" value="16,0" />
+        <observation name="false" value="2,0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:prox_sdkOrLibrary">
-      <dailyData date="5-7-2018">
-        <observation name="UNDEFINED" value="3,0" />
+      <dailyData date="6-7-2018">
+        <observation name="UNDEFINED" value="16,0" />
+        <observation name="false" value="2,0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:templates">
-      <dailyData date="5-7-2018">
-        <observation name="false" value="3,0" />
+      <dailyData date="6-7-2018">
+        <observation name="false" value="18,0" />
       </dailyData>
     </factor>
     <factor id="categoricalFeature:accessible">
-      <dailyData date="5-7-2018">
-        <observation name="UNDEFINED" value="3,0" />
+      <dailyData date="6-7-2018">
+        <observation name="UNDEFINED" value="18,0" />
       </dailyData>
     </factor>
     <factor id="categoricalFeature:expectedType">
-      <dailyData date="5-7-2018">
-        <observation name="UNDEFINED" value="3,0" />
+      <dailyData date="6-7-2018">
+        <observation name="UNDEFINED" value="18,0" />
       </dailyData>
     </factor>
     <factor id="categoricalFeature:kind">
-      <dailyData date="5-7-2018">
-        <observation name="UNDEFINED" value="3,0" />
+      <dailyData date="6-7-2018">
+        <observation name="UNDEFINED" value="18,0" />
       </dailyData>
     </factor>
     <factor id="categoricalFeature:prox_groovyReferenceListWeigher">
-      <dailyData date="5-7-2018">
-        <observation name="UNDEFINED" value="3,0" />
+      <dailyData date="6-7-2018">
+        <observation name="UNDEFINED" value="16,0" />
+        <observation name="unknown" value="2,0" />
       </dailyData>
     </factor>
     <factor id="categoricalFeature:prox_javaInheritance">
-      <dailyData date="5-7-2018">
-        <observation name="UNDEFINED" value="3,0" />
+      <dailyData date="6-7-2018">
+        <observation name="UNDEFINED" value="16,0" />
+        <observation name="null" value="2,0" />
       </dailyData>
     </factor>
     <factor id="categoricalFeature:prox_referenceList">
-      <dailyData date="5-7-2018">
-        <observation name="UNDEFINED" value="3,0" />
+      <dailyData date="6-7-2018">
+        <observation name="UNDEFINED" value="16,0" />
+        <observation name="unknown" value="2,0" />
       </dailyData>
     </factor>
     <factor id="categoricalFeature:recursion">
-      <dailyData date="5-7-2018">
-        <observation name="UNDEFINED" value="3,0" />
+      <dailyData date="6-7-2018">
+        <observation name="UNDEFINED" value="18,0" />
       </dailyData>
     </factor>
     <factor id="completionFinishedType">
-      <dailyData date="5-7-2018">
-        <observation name="cancelled" value="3,0" />
-        <observation name="explicitSelect" value="2,0" />
-        <observation name="typedSelect" value="1,0" />
+      <dailyData date="6-7-2018">
+        <observation name="cancelled" value="85,0" />
+        <observation name="explicitSelect" value="14,0" />
+        <observation name="typedSelect" value="4,0" />
       </dailyData>
     </factor>
     <factor id="completionType">
-      <dailyData date="5-7-2018">
-        <observation name="BASIC" value="4,0" />
+      <dailyData date="6-7-2018">
+        <observation name="BASIC" value="28,0" />
       </dailyData>
     </factor>
     <factor id="completionUsage">
-      <dailyData date="5-7-2018">
-        <observation name="count" value="6,0" />
+      <dailyData date="6-7-2018">
+        <observation name="count" value="103,0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:explicitProximity">
-      <dailyData date="5-7-2018">
+      <dailyData date="6-7-2018">
         <observation name="average" value="0,0" />
-        <observation name="count" value="5,0" />
+        <observation name="count" value="35,0" />
         <observation name="max" value="0,0" />
         <observation name="min" value="0,0" />
         <observation name="variance" value="0,0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:grouping">
-      <dailyData date="5-7-2018">
+      <dailyData date="6-7-2018">
         <observation name="average" value="0,0" />
-        <observation name="count" value="5,0" />
+        <observation name="count" value="35,0" />
         <observation name="max" value="0,0" />
         <observation name="min" value="0,0" />
         <observation name="variance" value="0,0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:mostUsed">
-      <dailyData date="5-7-2018">
-        <observation name="UNDEFINED" value="3,0" />
+      <dailyData date="6-7-2018">
+        <observation name="UNDEFINED" value="18,0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:nameEnd">
-      <dailyData date="5-7-2018">
-        <observation name="UNDEFINED" value="3,0" />
+      <dailyData date="6-7-2018">
+        <observation name="UNDEFINED" value="18,0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:position">
-      <dailyData date="5-7-2018">
-        <observation name="average" value="0,0" />
-        <observation name="count" value="5,0" />
-        <observation name="max" value="0,0" />
+      <dailyData date="6-7-2018">
+        <observation name="average" value="0,228571" />
+        <observation name="count" value="35,0" />
+        <observation name="max" value="2,0" />
         <observation name="min" value="0,0" />
-        <observation name="variance" value="0,0" />
+        <observation name="variance" value="0,351534" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:prefix">
-      <dailyData date="5-7-2018">
-        <observation name="average" value="-1152,2" />
-        <observation name="count" value="5,0" />
-        <observation name="max" value="-1152,0" />
-        <observation name="min" value="-1153,0" />
-        <observation name="variance" value="0,054444" />
+      <dailyData date="6-7-2018">
+        <observation name="average" value="-1146,685714" />
+        <observation name="count" value="35,0" />
+        <observation name="max" value="-1003,0" />
+        <observation name="min" value="-1202,0" />
+        <observation name="variance" value="1252,755664" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:priority">
-      <dailyData date="5-7-2018">
+      <dailyData date="6-7-2018">
+        <observation name="average" value="0,057143" />
+        <observation name="count" value="35,0" />
+        <observation name="max" value="1,0" />
+        <observation name="min" value="0,0" />
+        <observation name="variance" value="0,049299" />
+      </dailyData>
+    </factor>
+    <factor id="doubleFeature:prox_explicitlyImported">
+      <dailyData date="6-7-2018">
+        <observation name="UNDEFINED" value="16,0" />
+        <observation name="average" value="200,0" />
+        <observation name="count" value="3,0" />
+        <observation name="max" value="300,0" />
+        <observation name="min" value="0,0" />
+        <observation name="variance" value="5000,0" />
+      </dailyData>
+    </factor>
+    <factor id="doubleFeature:prox_knownElement">
+      <dailyData date="6-7-2018">
+        <observation name="UNDEFINED" value="16,0" />
         <observation name="average" value="0,0" />
-        <observation name="count" value="5,0" />
+        <observation name="count" value="3,0" />
         <observation name="max" value="0,0" />
         <observation name="min" value="0,0" />
         <observation name="variance" value="0,0" />
       </dailyData>
     </factor>
-    <factor id="doubleFeature:prox_explicitlyImported">
-      <dailyData date="5-7-2018">
-        <observation name="UNDEFINED" value="3,0" />
-      </dailyData>
-    </factor>
-    <factor id="doubleFeature:prox_knownElement">
-      <dailyData date="5-7-2018">
-        <observation name="UNDEFINED" value="3,0" />
-      </dailyData>
-    </factor>
     <factor id="doubleFeature:prox_sameModule">
-      <dailyData date="5-7-2018">
-        <observation name="UNDEFINED" value="3,0" />
+      <dailyData date="6-7-2018">
+        <observation name="UNDEFINED" value="16,0" />
+        <observation name="average" value="1,333333" />
+        <observation name="count" value="3,0" />
+        <observation name="max" value="2,0" />
+        <observation name="min" value="0,0" />
+        <observation name="variance" value="0,222222" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:prox_samePsiMember">
-      <dailyData date="5-7-2018">
-        <observation name="UNDEFINED" value="3,0" />
+      <dailyData date="6-7-2018">
+        <observation name="UNDEFINED" value="16,0" />
+        <observation name="average" value="0,0" />
+        <observation name="count" value="3,0" />
+        <observation name="max" value="0,0" />
+        <observation name="min" value="0,0" />
+        <observation name="variance" value="0,0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:query_length">
-      <dailyData date="5-7-2018">
+      <dailyData date="6-7-2018">
         <observation name="average" value="0,0" />
-        <observation name="count" value="5,0" />
+        <observation name="count" value="35,0" />
         <observation name="max" value="0,0" />
         <observation name="min" value="0,0" />
         <observation name="variance" value="0,0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:result_length">
-      <dailyData date="5-7-2018">
-        <observation name="average" value="6,2" />
-        <observation name="count" value="5,0" />
-        <observation name="max" value="7,0" />
-        <observation name="min" value="5,0" />
-        <observation name="variance" value="0,337778" />
+      <dailyData date="6-7-2018">
+        <observation name="average" value="8,085714" />
+        <observation name="count" value="35,0" />
+        <observation name="max" value="18,0" />
+        <observation name="min" value="4,0" />
+        <observation name="variance" value="8,596184" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:sameWords">
-      <dailyData date="5-7-2018">
-        <observation name="UNDEFINED" value="3,0" />
+      <dailyData date="6-7-2018">
+        <observation name="UNDEFINED" value="18,0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:shorter">
-      <dailyData date="5-7-2018">
-        <observation name="UNDEFINED" value="3,0" />
+      <dailyData date="6-7-2018">
+        <observation name="UNDEFINED" value="18,0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:simple">
-      <dailyData date="5-7-2018">
-        <observation name="UNDEFINED" value="3,0" />
+      <dailyData date="6-7-2018">
+        <observation name="UNDEFINED" value="18,0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:sorter">
-      <dailyData date="5-7-2018">
+      <dailyData date="6-7-2018">
         <observation name="average" value="1,0" />
-        <observation name="count" value="5,0" />
+        <observation name="count" value="35,0" />
         <observation name="max" value="1,0" />
         <observation name="min" value="1,0" />
         <observation name="variance" value="0,0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:statics">
-      <dailyData date="5-7-2018">
-        <observation name="UNDEFINED" value="3,0" />
+      <dailyData date="6-7-2018">
+        <observation name="UNDEFINED" value="18,0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:stats">
-      <dailyData date="5-7-2018">
-        <observation name="average" value="3999,6" />
-        <observation name="count" value="5,0" />
-        <observation name="max" value="9999,0" />
+      <dailyData date="6-7-2018">
+        <observation name="average" value="5713,257143" />
+        <observation name="count" value="35,0" />
+        <observation name="max" value="10000,0" />
         <observation name="min" value="0,0" />
-        <observation name="variance" value="8442755,64" />
+        <observation name="variance" value="14626110,851379" />
       </dailyData>
     </factor>
     <factor id="itemPosition">
-      <dailyData date="5-7-2018">
-        <observation name="0" value="2,0" />
+      <dailyData date="6-7-2018">
+        <observation name="0" value="12,0" />
+        <observation name="2" value="2,0" />
       </dailyData>
     </factor>
     <factor id="mnemonicsUsage">
-      <dailyData date="5-7-2018">
-        <observation name="total" value="2,0" />
-        <observation name="withMnemonics" value="0,0" />
+      <dailyData date="6-7-2018">
+        <observation name="total" value="11,0" />
+        <observation name="withMnemonics" value="1,0" />
       </dailyData>
     </factor>
     <factor id="prefixLength">
-      <dailyData date="5-7-2018">
+      <dailyData date="6-7-2018">
+        <observation name="1" value="3,0" />
+        <observation name="2" value="5,0" />
         <observation name="3" value="2,0" />
+        <observation name="4" value="3,0" />
+        <observation name="7" value="1,0" />
       </dailyData>
     </factor>
     <factor id="timeBetweenTyping">
-      <dailyData date="5-7-2018">
-        <observation name="average" value="169,857143" />
-        <observation name="count" value="7,0" />
+      <dailyData date="6-7-2018">
+        <observation name="average" value="195,129032" />
+        <observation name="count" value="31,0" />
       </dailyData>
     </factor>
   </component>
@@ -359,32 +492,74 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="PDFxReadersourcing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NewBestSub" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PDFxReadersourcing" type="b2602c69:ProjectViewProjectNode" />
               <item name="PDFxReadersourcing" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PDFxReadersourcing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PDFxReadersourcing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PDFxReadersourcing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PDFxReadersourcing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PDFxReadersourcing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PDFxReadersourcing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PDFxReadersourcing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PDFxReadersourcing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PDFxReadersourcing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PDFxReadersourcing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="program" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1530812476947" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1530886144921" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Universita/Tesi/Magistrale/NewBestSub/pom.xml" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.4977064" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Dropbox\Documenti\Progetti\R@SM\PDFxReadersourcing\src\main\assembly" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -398,7 +573,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Maven.Clean">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -411,11 +586,181 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Test" type="JUnit" factoryName="JUnit">
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="wholeProject" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="Build + Pack + Run" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="package" />
+                <option value="exec:java" />
+                <option value="-DskipTests" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="Build + Pack" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="package" />
+                <option value="-DskipTests" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="Build + Run" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="compile" />
+                <option value="exec:java" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="Build + Test + Pack + Run" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="package" />
+                <option value="exec:java" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="Build + Test + Pack" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="package" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="Build" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="compile" />
+                <option value="-DskipTests" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
     </configuration>
     <configuration name="Clean" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
@@ -429,6 +774,31 @@
             <option name="goals">
               <list>
                 <option value="clean" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="Run" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="exec:java" />
               </list>
             </option>
             <option name="pomFileName" />
@@ -459,6 +829,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="JUnit.Test" />
+      <item itemvalue="Maven.Run" />
+      <item itemvalue="Maven.Build" />
+      <item itemvalue="Maven.Build + Run" />
+      <item itemvalue="Maven.Build + Pack" />
+      <item itemvalue="Maven.Build + Pack + Run" />
+      <item itemvalue="Maven.Build + Test + Pack" />
+      <item itemvalue="Maven.Build + Test + Pack + Run" />
+      <item itemvalue="Maven.Clean" />
+    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -471,40 +852,43 @@
       <option name="presentableId" value="Default" />
       <updated>1530812225221</updated>
       <workItem from="1530812231488" duration="285000" />
+      <workItem from="1530879308837" duration="2933000" />
+      <workItem from="1530882274765" duration="3141000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="285000" />
+    <option name="totallyTimeSpent" value="6359000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Nl-Palette" order="0" />
       <window_info id="Image Layers" order="1" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
-      <window_info id="Structure" order="5" sideWeight="0.44248986" side_tool="true" visible="true" weight="0.1748401" />
+      <window_info id="Structure" order="5" sideWeight="0.44555873" side_tool="true" visible="true" weight="0.15991472" />
       <window_info id="Favorites" order="6" sideWeight="0.4053452" side_tool="true" weight="0.20010729" />
-      <window_info content_ui="combo" id="Project" order="7" sideWeight="0.55751014" visible="true" weight="0.1748401" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.3544776" visible="true" weight="0.17797554" />
+      <window_info content_ui="combo" id="Project" order="7" sideWeight="0.5544413" visible="true" weight="0.15991472" />
+      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.3544776" weight="0.17797554" />
       <window_info anchor="bottom" id="Messages" order="1" sideWeight="0.46723953" weight="0.2932862" />
-      <window_info anchor="bottom" x="21" y="414" width="1878" height="222" id="Run" order="2" sideWeight="0.4099147" weight="0.22358176" />
+      <window_info active="true" anchor="bottom" x="21" y="414" width="1878" height="222" id="Run" order="2" sideWeight="0.4099147" visible="true" weight="0.22358176" />
       <window_info anchor="bottom" id="TODO" order="3" sideWeight="0.4936034" weight="0.18278302" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" sideWeight="0.48933902" weight="0.32628062" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.6455224" side_tool="true" weight="0.24410377" />
-      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" side_tool="true" weight="0.3" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.6455224" side_tool="true" weight="0.243604" />
+      <window_info anchor="bottom" id="Version Control" order="9" side_tool="true" weight="0.3" />
       <window_info anchor="bottom" id="Debug" order="10" sideWeight="0.59008527" weight="0.4844098" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="Palette" order="0" />
       <window_info anchor="right" id="Palette&#9;" order="1" />
       <window_info anchor="right" id="Capture Analysis" order="2" />
       <window_info anchor="right" id="Properties" order="3" />
-      <window_info anchor="right" id="Maven Projects" order="4" sideWeight="0.49797022" visible="true" weight="0.1130064" />
+      <window_info anchor="right" id="Maven Projects" order="4" sideWeight="0.49797022" visible="true" weight="0.13752665" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Commander" order="6" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
@@ -525,10 +909,65 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/../../../Universita/Tesi/Magistrale/NewBestSub/src/main/kotlin/it/uniud/newbestsub/program/Program.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="50" lean-forward="true" selection-end-line="321" />
+          <folding>
+            <element signature="e#37#482#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../Universita/Tesi/Magistrale/NewBestSub/NewBestSub.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="8" column="35" lean-forward="true" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+          <caret line="8" column="53" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../Universita/Tesi/Magistrale/NewBestSub/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-85">
+          <caret line="289" column="21" selection-start-line="289" selection-start-column="21" selection-end-line="289" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/assembly/test-jar-with-dependencies.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/it/medialab/pdfxreadersourcing/program/Program.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../Universita/Tesi/Magistrale/NewBestSub/src/test/kotlin/it/uniud/newbestsub/dataset/DatasetModelTest.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="e#37#236#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/kotlin/it/medialab/pdfxreadersourcing/program/ProgramTest.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="40" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="126" column="64" selection-start-line="126" selection-start-column="64" selection-end-line="126" selection-end-column="64" />
         </state>
       </provider>
     </entry>
@@ -549,7 +988,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>No facets are configured</last-edited>
+          <last-edited>Kotlin</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -623,6 +1062,7 @@
   </component>
   <component name="mavenExecuteGoalHistory">
     <option value="$PROJECT_DIR$" />
+    <option value="test" />
     <option value="compile" />
   </component>
 </project>
