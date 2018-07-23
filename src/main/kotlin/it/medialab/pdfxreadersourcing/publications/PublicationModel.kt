@@ -12,32 +12,53 @@ import org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotationLink
 import org.apache.pdfbox.pdmodel.interactive.annotation.PDBorderStyleDictionary
 import java.io.File
 
-
 class PublicationModel {
 
     private lateinit var publication: PDDocument
     private lateinit var name: String
-    private lateinit var path: String
+    private lateinit var inputPath: String
+    private lateinit var outputPath: String
     private var numberOfPages = 0
     private var logger = LogManager.getLogger()
 
     fun loadData(publication: File) {
 
+        updateData(publication)
+        this.outputPath = "${Constants.OUTPUT_PATH}$name - Link.pdf"
+        publicationDataToString()
+
+    }
+
+    fun loadData(publication: File, outputPath: String) {
+
+        updateData(publication)
+        this.outputPath = "$outputPath${Constants.PATH_SEPARATOR}$name - Link.pdf"
+        publicationDataToString()
+
+    }
+
+    private fun updateData(publication: File) {
+        this.publication = PDDocument.load(publication)
+        this.name = publication.nameWithoutExtension
+        this.numberOfPages = this.publication.numberOfPages
+        this.inputPath = publication.absolutePath
+    }
+
+    private fun publicationDataToString() {
+
         logger.info("---------- PUBLICATION DATA BEGIN ----------")
 
-        this.publication = PDDocument.load(publication)
-
         logger.info("Name:")
-        name = publication.nameWithoutExtension
         logger.info(name)
 
-        logger.info("Path:")
-        path = publication.absolutePath
-        logger.info(path)
-
         logger.info("Number of Pages:")
-        numberOfPages = this.publication.numberOfPages
         logger.info(numberOfPages)
+
+        logger.info("Input Path:")
+        logger.info(inputPath)
+
+        logger.info("Output Path:")
+        logger.info(outputPath)
 
         logger.info("---------- PUBLICATION DATA END ----------")
 
@@ -90,12 +111,12 @@ class PublicationModel {
         newPage.annotations.add(caption)
 
         publication.addPage(newPage)
-        publication.save("${Constants.OUTPUT_PATH}$name - Link.pdf")
+        publication.save(outputPath)
         publication.close()
 
         logger.info("Link added successfully.")
         logger.info("Updated file path:")
-        logger.info("${Constants.OUTPUT_PATH}$name - Link.pdf")
+        logger.info(outputPath)
 
     }
 

@@ -10,7 +10,8 @@ class PublicationController {
 
     private var models = mutableListOf<PublicationModel>()
     var view: PublicationView = PublicationView()
-    private lateinit var datasetPath: String
+    private lateinit var inputPath: String
+    private lateinit var ouputPath: String
     private var numberOfPublications: Int = 0
     private var logger = LogManager.getLogger()
 
@@ -18,47 +19,56 @@ class PublicationController {
         logger.info("Controller launched.")
     }
 
-    fun load(publicationPath: String) {
+    fun load(publicationInputPath: String, publicationOutputPath: String) {
 
-        this.datasetPath = publicationPath
+        this.inputPath = publicationInputPath
+        this.ouputPath = publicationOutputPath
 
         logger.info("Data set loading started.")
-        logger.info("Path: \"$publicationPath\".")
+        logger.info("Path: \"${this.inputPath}\".")
 
-        val outputDirectory = File(Constants.OUTPUT_PATH)
-        logger.info("Checking if ${Constants.PROGRAM_NAME} output dir. exists.")
-        if (!outputDirectory.exists()) {
-            logger.info("Output dir. not exists.")
-            if (outputDirectory.mkdirs()) {
-                logger.info("Output dir. created.")
-                logger.info("Path: \"${Constants.OUTPUT_PATH}\".")
+        val outputDirectory = File(this.ouputPath)
+
+        if(this.ouputPath == Constants.OUTPUT_PATH) {
+            logger.info("Checking if ${Constants.PROGRAM_NAME} output dir. exists.")
+            if (!outputDirectory.exists()) {
+                logger.info("Output dir. not exists.")
+                if (outputDirectory.mkdirs()) {
+                    logger.info("Output dir. created.")
+                    logger.info("Path: \"${this.ouputPath}\".")
+                }
+            } else {
+                logger.info("Output dir. already exists.")
+                logger.info("Output dir. creation skipped.")
+                logger.info("Path: \"${this.ouputPath}\".")
             }
         } else {
-            logger.info("Output dir. already exists.")
-            logger.info("Output dir. creation skipped.")
-            logger.info("Path:\"${Constants.OUTPUT_PATH}\".")
+            logger.info("Custom output dir. presence already checked.")
+            logger.info("Path: \"${this.ouputPath}\".")
         }
         try {
-            File(Constants.INPUT_PATH).walkTopDown().forEach {
+            File(this.inputPath).walkTopDown().forEach {
                 if (!it.isDirectory)
                     numberOfPublications++
             }
             logger.info("Number of detected files: $numberOfPublications.")
-            File(Constants.INPUT_PATH).walkTopDown().forEach {
+            File(this.inputPath).walkTopDown().forEach {
                 if (!it.isDirectory) {
-                    logger.info(it)
                     val model = PublicationModel()
-                    model.loadData(it)
+                    if(this.ouputPath == Constants.OUTPUT_PATH)
+                        model.loadData(it)
+                    else
+                        model.loadData(it, this.ouputPath)
                     models.plusAssign(model)
                 }
             }
         } catch (exception: FileNotFoundException) {
-            logger.warn("Data set not found. Is file/folder inside a \"data\" dir.?")
+            logger.warn("Data set not found. Is file/folder inside a \"data\" dir.? If you've specified a custom input path, please check it.")
         } catch (exception: IOException) {
             logger.warn(exception.message as String)
         }
 
-        logger.info("Data set loading for input path \"$datasetPath\" completed.")
+        logger.info("Data set loading for input path \"${this.inputPath}\" completed.")
 
     }
 
