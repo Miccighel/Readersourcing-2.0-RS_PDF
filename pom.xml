@@ -46,6 +46,9 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.main.class>it.medialab.pdfxreadersourcing.program.Program</project.main.class>
+        <project.fat.jar.name>${project.artifactId}-${project.version}-jar-with-dependencies</project.fat.jar.name>
+        <local.server.output.dir.one>E:\Dropbox\Documenti\Progetti\R@SM\</local.server.output.dir.one>
+        <local.server.output.dir.two>R@SM-ReadersourcingServerSide\lib\</local.server.output.dir.two>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <kotlin.version>1.2.51</kotlin.version>
@@ -61,6 +64,7 @@
         <maven.dependency-plugin.version>3.1.1</maven.dependency-plugin.version>
         <maven.jar-plugin.version>3.1.0</maven.jar-plugin.version>
         <maven.surefire-plugin.version>2.22.0</maven.surefire-plugin.version>
+        <maven.resource-plugin.version>3.1.0</maven.resource-plugin.version>
         <log4j.api.version>2.11.0</log4j.api.version>
         <log4j.core.version>2.11.0</log4j.core.version>
         <apache.commons.cli>1.4</apache.commons.cli>
@@ -213,12 +217,12 @@
                             <mainClass>${project.main.class}</mainClass>
                         </manifest>
                     </archive>
-                    <descriptors>
-                        <descriptor>src/main/assembly/test-jar-with-dependencies.xml</descriptor>
-                    </descriptors>
                     <descriptorRefs>
                         <descriptorRef>jar-with-dependencies</descriptorRef>
                     </descriptorRefs>
+                    <descriptors>
+                        <descriptor>src/main/assembly/test-jar-with-dependencies.xml</descriptor>
+                    </descriptors>
                 </configuration>
                 <executions>
                     <execution>
@@ -280,6 +284,30 @@
                 <configuration>
                     <outputDir>${project.basedir}/target/docs</outputDir>
                 </configuration>
+            </plugin>
+
+            <plugin>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>${maven.resource-plugin.version}</version>
+                <executions>
+                    <execution>
+                        <id>copy-files-on-build</id>
+                        <phase>validate</phase>
+                        <goals>
+                            <goal>copy-resources</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>${local.server.output.dir.one}${local.server.output.dir.two}</outputDirectory>
+                            <resources>
+                                <resource>
+                                    <directory>${project.build.directory}</directory>
+                                    <include>${project.fat.jar.name}.jar</include>
+                                    <filtering>false</filtering>
+                                </resource>
+                            </resources>
+                        </configuration>
+                    </execution>
+                </executions>
             </plugin>
 
         </plugins>

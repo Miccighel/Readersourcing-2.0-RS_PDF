@@ -39,7 +39,6 @@ object Program {
                 if (!File(publicationInputPath).exists()) throw FileNotFoundException(errorMessage) else {
                     logger.info("Input path detected: CUSTOM")
                 }
-                println(publicationInputPath)
             } else {
                 publicationInputPath = Constants.INPUT_PATH
                 logger.info("Input path detected: DEFAULT")

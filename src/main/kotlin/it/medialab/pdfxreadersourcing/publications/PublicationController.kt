@@ -5,6 +5,7 @@ import org.apache.logging.log4j.LogManager
 import java.io.File
 import java.io.FileNotFoundException
 import java.io.IOException
+import java.nio.file.Files
 
 class PublicationController {
 
@@ -29,7 +30,7 @@ class PublicationController {
 
         val outputDirectory = File(this.ouputPath)
 
-        if(this.ouputPath == Constants.OUTPUT_PATH) {
+        if (this.ouputPath == Constants.OUTPUT_PATH) {
             logger.info("Checking if ${Constants.PROGRAM_NAME} output dir. exists.")
             if (!outputDirectory.exists()) {
                 logger.info("Output dir. not exists.")
@@ -49,17 +50,20 @@ class PublicationController {
         try {
             File(this.inputPath).walkTopDown().forEach {
                 if (!it.isDirectory)
-                    numberOfPublications++
+                    if (Files.probeContentType(it.toPath()) == "application/pdf")
+                        numberOfPublications++
             }
-            logger.info("Number of detected files: $numberOfPublications.")
+            logger.info("Number of detected files (PDF format): $numberOfPublications.")
             File(this.inputPath).walkTopDown().forEach {
                 if (!it.isDirectory) {
-                    val model = PublicationModel()
-                    if(this.ouputPath == Constants.OUTPUT_PATH)
-                        model.loadData(it)
-                    else
-                        model.loadData(it, this.ouputPath)
-                    models.plusAssign(model)
+                    if (Files.probeContentType(it.toPath()) == "application/pdf") {
+                        val model = PublicationModel()
+                        if (this.ouputPath == Constants.OUTPUT_PATH)
+                            model.loadData(it)
+                        else
+                            model.loadData(it, this.ouputPath)
+                        models.plusAssign(model)
+                    }
                 }
             }
         } catch (exception: FileNotFoundException) {

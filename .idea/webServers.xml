@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="d32f9789-69c2-485e-81dc-19fee2d3ded5" name="R@SM-PDFxReadersourcingServerSide" url="http://localhost">
+        <fileTransfer port="0" mountedRoot="E:\Dropbox\Documenti\Progetti\R@SM\R@SM-ReadersourcingServerSide" accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</project>

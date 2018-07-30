@@ -11,45 +11,46 @@ import org.apache.pdfbox.pdmodel.interactive.action.PDActionURI
 import org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotationLink
 import org.apache.pdfbox.pdmodel.interactive.annotation.PDBorderStyleDictionary
 import java.io.File
+import java.nio.file.Files
 
 class PublicationModel {
 
     private lateinit var publication: PDDocument
     private lateinit var name: String
+    private lateinit var mimeType: String
     private lateinit var inputPath: String
     private lateinit var outputPath: String
     private var numberOfPages = 0
     private var logger = LogManager.getLogger()
 
     fun loadData(publication: File) {
-
         updateData(publication)
-        this.outputPath = "${Constants.OUTPUT_PATH}$name - Link.pdf"
+        this.outputPath = "${Constants.OUTPUT_PATH}$name-Link.pdf"
         publicationDataToString()
-
     }
 
     fun loadData(publication: File, outputPath: String) {
-
         updateData(publication)
-        this.outputPath = "$outputPath${Constants.PATH_SEPARATOR}$name - Link.pdf"
+        this.outputPath = "$outputPath$name-Link.pdf"
         publicationDataToString()
-
     }
 
     private fun updateData(publication: File) {
         this.publication = PDDocument.load(publication)
         this.name = publication.nameWithoutExtension
+        this.mimeType = Files.probeContentType(publication.toPath())
         this.numberOfPages = this.publication.numberOfPages
         this.inputPath = publication.absolutePath
     }
 
     private fun publicationDataToString() {
-
         logger.info("---------- PUBLICATION DATA BEGIN ----------")
 
         logger.info("Name:")
         logger.info(name)
+
+        logger.info("Mime type:")
+        logger.info(mimeType)
 
         logger.info("Number of Pages:")
         logger.info(numberOfPages)
@@ -61,11 +62,9 @@ class PublicationModel {
         logger.info(outputPath)
 
         logger.info("---------- PUBLICATION DATA END ----------")
-
     }
 
     fun addLink(text: String, url: String) {
-
         logger.info("Adding link to \"$name.pdf\"")
 
         val newPage = PDPage()
@@ -117,7 +116,6 @@ class PublicationModel {
         logger.info("Link added successfully.")
         logger.info("Updated file path:")
         logger.info(outputPath)
-
     }
 
 }
