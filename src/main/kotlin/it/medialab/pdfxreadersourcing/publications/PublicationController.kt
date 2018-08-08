@@ -10,7 +10,6 @@ import java.nio.file.Files
 class PublicationController {
 
     private var models = mutableListOf<PublicationModel>()
-    var view: PublicationView = PublicationView()
     private lateinit var inputPath: String
     private lateinit var ouputPath: String
     private var numberOfPublications: Int = 0
