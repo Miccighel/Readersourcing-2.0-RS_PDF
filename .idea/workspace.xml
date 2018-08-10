@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9083520d-b9ff-4dc1-bd1b-1036df08af65" name="Default Changelist" comment="" />
+    <list default="true" id="9083520d-b9ff-4dc1-bd1b-1036df08af65" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/it/medialab/pdfxreadersourcing/publications/PublicationController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/it/medialab/pdfxreadersourcing/publications/PublicationController.kt" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -83,26 +86,27 @@
     <session id="-1109569772">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="12" />
+          <entry key="project.closed" value="18" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.11" value="1" />
-          <entry key="project.open.time.12" value="3" />
-          <entry key="project.open.time.13" value="3" />
-          <entry key="project.open.time.14" value="1" />
-          <entry key="project.open.time.17" value="1" />
-          <entry key="project.opened" value="12" />
+          <entry key="project.open.time.12" value="4" />
+          <entry key="project.open.time.13" value="4" />
+          <entry key="project.open.time.14" value="3" />
+          <entry key="project.open.time.16" value="1" />
+          <entry key="project.open.time.17" value="2" />
+          <entry key="project.opened" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="kt" value="200" />
+          <entry key="kt" value="201" />
           <entry key="xml" value="666" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Kotlin" value="200" />
+          <entry key="Kotlin" value="201" />
           <entry key="XML" value="666" />
         </counts>
       </usages-collector>
@@ -128,10 +132,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/it/medialab/pdfxreadersourcing/program/Program.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1197">
+            <state relative-caret-position="305">
               <caret line="65" column="70" selection-start-line="65" selection-start-column="70" selection-end-line="65" selection-end-column="70" />
               <folding>
                 <element signature="e#48#446#0" expanded="true" />
@@ -143,8 +147,8 @@
       <file pinned="true" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/it/medialab/pdfxreadersourcing/publications/PublicationController.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1050">
-              <caret line="56" column="56" selection-start-line="56" selection-start-column="56" selection-end-line="56" selection-end-column="56" />
+            <state relative-caret-position="42">
+              <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
               <folding>
                 <element signature="e#53#260#0" expanded="true" />
               </folding>
@@ -152,11 +156,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="true" current-in-tab="true">
+      <file pinned="true" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/it/medialab/pdfxreadersourcing/publications/PublicationModel.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="39" column="52" selection-start-line="39" selection-start-column="52" selection-end-line="39" selection-end-column="52" />
+            <state relative-caret-position="63">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
               <folding>
                 <element signature="e#53#652#0" expanded="true" />
               </folding>
@@ -222,11 +226,11 @@
         <option value="$PROJECT_DIR$/src/main/kotlin/it/medialab/pdfxreadersourcing/utils/Tools.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/it/medialab/pdfxreadersourcing/utils/Constants.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/it/medialab/pdfxreadersourcing/program/Program.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/it/medialab/pdfxreadersourcing/publications/PublicationController.kt" />
         <option value="$PROJECT_DIR$/src/main/resources/log4j2.xml" />
         <option value="$PROJECT_DIR$/src/main/assembly/local-deploy.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/kotlin/it/medialab/pdfxreadersourcing/publications/PublicationModel.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/it/medialab/pdfxreadersourcing/publications/PublicationController.kt" />
       </list>
     </option>
   </component>
@@ -287,6 +291,41 @@
               <item name="R@SM-PDFxReadersourcing" type="b2602c69:ProjectViewProjectNode" />
               <item name="R@SM-PDFxReadersourcing" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="R@SM-PDFxReadersourcing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="R@SM-PDFxReadersourcing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="R@SM-PDFxReadersourcing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="R@SM-PDFxReadersourcing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="R@SM-PDFxReadersourcing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="R@SM-PDFxReadersourcing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="R@SM-PDFxReadersourcing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="R@SM-PDFxReadersourcing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="pdfxreadersourcing" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="R@SM-PDFxReadersourcing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="R@SM-PDFxReadersourcing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="pdfxreadersourcing" type="462c0819:PsiDirectoryNode" />
+              <item name="publications" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -297,14 +336,14 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1532595848234" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1533805190060" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/target/archive-tmp" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.4977064" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -660,7 +699,13 @@
       <workItem from="1532944851966" duration="759000" />
       <workItem from="1532951913768" duration="441000" />
       <workItem from="1532961663070" duration="28000" />
-      <workItem from="1533744468156" duration="16000" />
+      <workItem from="1533744468156" duration="272000" />
+      <workItem from="1533803371999" duration="50000" />
+      <workItem from="1533803483179" duration="81000" />
+      <workItem from="1533803620944" duration="30000" />
+      <workItem from="1533803840976" duration="16000" />
+      <workItem from="1533804527303" duration="710000" />
+      <workItem from="1533806081859" duration="21000" />
     </task>
     <servers />
   </component>
@@ -673,7 +718,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41131000" />
+    <option name="totallyTimeSpent" value="42295000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -692,18 +737,18 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
-      <window_info id="Structure" order="5" sideWeight="0.40206185" side_tool="true" visible="true" weight="0.18923241" />
+      <window_info id="Structure" order="5" sideWeight="0.40893856" side_tool="true" visible="true" weight="0.20202559" />
       <window_info id="Favorites" order="6" sideWeight="0.4053452" side_tool="true" weight="0.20010729" />
-      <window_info content_ui="combo" id="Project" order="7" sideWeight="0.5979381" visible="true" weight="0.18923241" />
+      <window_info active="true" content_ui="combo" id="Project" order="7" sideWeight="0.5910615" visible="true" weight="0.20202559" />
       <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.3544776" weight="0.17797554" />
       <window_info anchor="bottom" id="Messages" order="1" sideWeight="0.46723953" weight="0.2932862" />
-      <window_info anchor="bottom" x="1920" y="23" width="1680" height="987" id="Run" order="2" sideWeight="0.4099147" type="WINDOWED" weight="0.22358176" />
+      <window_info anchor="bottom" x="0" y="23" width="1920" height="1017" id="Run" order="2" sideWeight="0.4099147" type="WINDOWED" weight="0.22358176" />
       <window_info anchor="bottom" id="TODO" order="3" sideWeight="0.4936034" weight="0.18191965" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" sideWeight="0.48933902" weight="0.32589287" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
-      <window_info active="true" anchor="bottom" id="Event Log" order="8" sideWeight="0.6455224" side_tool="true" visible="true" weight="0.24134079" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.6455224" side_tool="true" weight="0.24022347" />
       <window_info anchor="bottom" id="Version Control" order="9" side_tool="true" weight="0.3" />
       <window_info anchor="bottom" id="Debug" order="10" sideWeight="0.59008527" weight="0.484375" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
@@ -778,13 +823,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/it/medialab/pdfxreadersourcing/publications/PublicationView.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/it/medialab/pdfxreadersourcing/publications/PublicationView.kt" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/log4j2.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
@@ -802,7 +841,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/assembly/local-deploy.xml" />
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/it/medialab/pdfxreadersourcing/program/Program.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1197">
+        <state relative-caret-position="305">
           <caret line="65" column="70" selection-start-line="65" selection-start-column="70" selection-end-line="65" selection-end-column="70" />
           <folding>
             <element signature="e#48#446#0" expanded="true" />
@@ -812,10 +851,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/it/medialab/pdfxreadersourcing/publications/PublicationController.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1050">
-          <caret line="56" column="56" selection-start-line="56" selection-start-column="56" selection-end-line="56" selection-end-column="56" />
+        <state relative-caret-position="42">
+          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
           <folding>
             <element signature="e#53#260#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/it/medialab/pdfxreadersourcing/publications/PublicationModel.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="e#53#652#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -838,16 +887,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6195">
           <caret line="295" column="31" selection-start-line="295" selection-start-column="31" selection-end-line="295" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/it/medialab/pdfxreadersourcing/publications/PublicationModel.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="39" column="52" selection-start-line="39" selection-start-column="52" selection-end-line="39" selection-end-column="52" />
-          <folding>
-            <element signature="e#53#652#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
