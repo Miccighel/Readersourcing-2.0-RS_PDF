@@ -75,9 +75,9 @@ class PublicationController {
 
     }
 
-    fun addLink(text: String, url: String) {
+    fun addUrl(parameters: Parameters) {
         models.forEach { model ->
-            model.addLink(text, url)
+            model.addUrl(parameters)
         }
     }
 

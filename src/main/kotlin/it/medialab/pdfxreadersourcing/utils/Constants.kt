@@ -12,4 +12,5 @@ object Constants {
     val LOG_PATH = "${PATH}log$PATH_SEPARATOR"
     val LOG_FILE_NAME = "Execution"
     val LOG_FILE_SUFFIX = ".log"
+    val READERSOURCING_SERVER_SIDE_URL = "http://localhost:3000/"
 }

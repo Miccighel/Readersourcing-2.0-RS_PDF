@@ -1,9 +1,11 @@
 package it.medialab.pdfxreadersourcing.program
 
+import it.medialab.pdfxreadersourcing.publications.Parameters
 import it.medialab.pdfxreadersourcing.publications.PublicationController
 import it.medialab.pdfxreadersourcing.utils.Constants
 import it.medialab.pdfxreadersourcing.utils.Tools.updateLogger
 import org.apache.commons.cli.*
+import org.apache.commons.validator.routines.UrlValidator
 import org.apache.logging.log4j.Level
 import org.apache.logging.log4j.LogManager
 import org.apache.logging.log4j.Logger
@@ -21,6 +23,10 @@ object Program {
         val publicationController: PublicationController
         val publicationInputPath: String
         val publicationOutputPath: String
+        val caption: String
+        val url: String
+        var authenticationToken: String? = null
+        var publicationIdentifier: String? = null
         val logger: Logger
 
         System.setProperty("sun.java2d.cmm", "sun.java2d.cmm.kcms.KcmsServiceProvider")
@@ -34,35 +40,100 @@ object Program {
             commandLine = parser.parse(options, arguments)
 
             if (commandLine.hasOption("pIn")) {
+                if (!commandLine.hasOption("pOut")) throw ParseException("Value for the option <<pOut>> or <<pathOut>> is missing. Check the usage section below.")
                 publicationInputPath = commandLine.getOptionValue("pIn")
-                val errorMessage = "Input path not found. Please, check it. Path: \"$publicationInputPath\""
-                if (!File(publicationInputPath).exists()) throw FileNotFoundException(errorMessage) else {
-                    logger.info("Input path detected: CUSTOM")
+                if (!File(publicationInputPath).exists()) throw FileNotFoundException("Value for the option <<pIn>> or <<pathIn>> must be a existing path. Check the usage section below.") else {
+                    if (commandLine.hasOption("a") && commandLine.hasOption("pId")) {
+                        if (!File(publicationInputPath).isFile) throw ParseException("Value for the option <<pIn>> or <<pathIn>> must be a path to a file. Check the usage section below.") else {
+                            logger.info("Input path found: CUSTOM")
+                            logger.info("Path: $publicationInputPath")
+                        }
+                    } else {
+                        logger.info("Input path found: CUSTOM")
+                        logger.info("Path: $publicationInputPath")
+                    }
                 }
             } else {
+                if (commandLine.hasOption("pOut")) throw ParseException("Value for the option <<pOut>> or <<pathOut>> is missing. Check the usage section below.")
                 publicationInputPath = Constants.INPUT_PATH
-                logger.info("Input path detected: DEFAULT")
+                logger.info("Input path found: DEFAULT")
+                logger.info("Path: $publicationInputPath")
             }
 
             if (commandLine.hasOption("pOut")) {
+                if (!commandLine.hasOption("pIn")) throw ParseException("Value for the option <<pIn>> or <<pathIn>> is missing. Check the usage section below.")
                 publicationOutputPath = commandLine.getOptionValue("pOut")
-                val errorMessage = "Output path not found. Please, check it. Path: \"$publicationOutputPath\""
-                if (!File(publicationOutputPath).exists()) throw FileNotFoundException(errorMessage) else {
-                    logger.info("Output path detected: CUSTOM")
-                    if (!File(publicationOutputPath).isDirectory) throw ParseException("Value for the option <<pOut>> or <<pOut>> must be a path to a directory. Check the usage section below")
+                if (!File(publicationOutputPath).exists()) throw FileNotFoundException("Value for the option <<pOut>> or <<pathOut>> must be an existing path. Check the usage section below.") else {
+                    if (!File(publicationOutputPath).isDirectory) throw ParseException("Value for the option <<pOut>> or <<pathOut>> must be a path to a directory. Check the usage section below.") else {
+                        logger.info("Output path found: CUSTOM")
+                        logger.info("Path: $publicationOutputPath")
+                    }
                 }
             } else {
+                if (commandLine.hasOption("pIn")) throw ParseException("Value for the option <<pIn>> or <<pathIn>> is missing. Check the usage section below.")
                 publicationOutputPath = Constants.OUTPUT_PATH
-                logger.info("Output path detected: DEFAULT")
+                logger.info("Output path found: DEFAULT")
+                logger.info("Path: $publicationOutputPath")
+            }
+
+            val urlValidator = UrlValidator()
+            if (urlValidator.isValid(commandLine.getOptionValue("u"))) {
+                url = commandLine.getOptionValue("u")
+                logger.info("URL found: $url")
+            } else throw ParseException("Value for the option <<u>> or <<Url>> must be a valid URL. Check the usage section below.")
+
+            caption = commandLine.getOptionValue("c")
+            logger.info("Caption found: $caption")
+
+            if (commandLine.hasOption("a")) {
+                if (!commandLine.hasOption("pId")) throw ParseException("Value for the option <<pId>> or <<publicationId>> is missing. Check the usage section below.")
+                if (!commandLine.hasOption("pIn")) throw ParseException("Value for the option <<pIn>> or <<pathIn>> is missing. Check the usage section below.")
+                if (!commandLine.hasOption("pOut")) throw ParseException("Value for the option <<pOut>> or <<pathOut>> is missing. Check the usage section below.")
+                authenticationToken = commandLine.getOptionValue("a")
+                if (commandLine.hasOption("pId")) {
+                    if (!commandLine.hasOption("a")) throw ParseException("Value for the option <<a>> or <<authToken>> is missing. Check the usage section below.")
+                    if (!commandLine.hasOption("pIn")) throw ParseException("Value for the option <<pIn>> or <<pathIn>> is missing. Check the usage section below.")
+                    if (!commandLine.hasOption("pOut")) throw ParseException("Value for the option <<pOut>> or <<pathOut>> is missing. Check the usage section below.")
+                    publicationIdentifier = commandLine.getOptionValue("pId")
+                }
+            }
+
+            if (commandLine.hasOption("pId")) {
+                if (!commandLine.hasOption("a")) throw ParseException("Value for the option <<a>> or <<authToken>> is missing. Check the usage section below.")
+                if (!commandLine.hasOption("pIn")) throw ParseException("Value for the option <<pIn>> or <<pathIn>> is missing. Check the usage section below.")
+                if (!commandLine.hasOption("pOut")) throw ParseException("Value for the option <<pOut>> or <<pathOut>> is missing. Check the usage section below.")
+                publicationIdentifier = commandLine.getOptionValue("pId")
+                if (commandLine.hasOption("a")) {
+                    if (!commandLine.hasOption("pId")) throw ParseException("Value for the option <<pId>> or <<publicationId>> is missing. Check the usage section below.")
+                    if (!commandLine.hasOption("pIn")) throw ParseException("Value for the option <<pIn>> or <<pathIn>> is missing. Check the usage section below.")
+                    if (!commandLine.hasOption("pOut")) throw ParseException("Value for the option <<pOut>> or <<pathOut>> is missing. Check the usage section below.")
+                    authenticationToken = commandLine.getOptionValue("a")
+                }
+            }
+
+            if (commandLine.hasOption("a")) {
+                logger.info("Authentication token found: $authenticationToken")
+            }
+            if (commandLine.hasOption("pId")) {
+                logger.info("Publication identifier found: $publicationIdentifier")
             }
 
             publicationController = PublicationController()
             publicationController.load(publicationInputPath, publicationOutputPath)
-            publicationController.addLink("Click here to rate this article", "http://google.it")
+            publicationController.addUrl(Parameters(caption, url, authenticationToken, publicationIdentifier))
+
+            logger.info("${Constants.PROGRAM_NAME} execution terminated.")
 
         } catch (exception: FileNotFoundException) {
+            logger.error(exception.message)
+            logger.info("${Constants.PROGRAM_NAME} execution terminated.")
+
+        } catch (exception: ParseException) {
 
             logger.error(exception.message)
+            val formatter = HelpFormatter()
+            formatter.printHelp(Constants.PROGRAM_NAME, options)
+            logger.error("End of the usage section.")
             logger.info("${Constants.PROGRAM_NAME} execution terminated.")
 
         }
@@ -76,7 +147,16 @@ object Program {
         options.addOption(source)
         source = Option.builder("pOut").longOpt("pathOut").desc("Relative path to the output directory.").hasArg().argName("Result Directory").build()
         options.addOption(source)
+        source = Option.builder("c").longOpt("caption").desc("Caption for the URL to add. [REQUIRED]").hasArg().argName("Caption").required().build()
+        options.addOption(source)
+        source = Option.builder("u").longOpt("url").desc("URL to add. It must be a valid URL. [REQUIRED]").hasArg().argName("Url").required().build()
+        options.addOption(source)
+        source = Option.builder("a").longOpt("authToken").desc("Authentication token for R@SM-ReadersourcingServerSide.").hasArg().argName("Authentication Token").build()
+        options.addOption(source)
+        source = Option.builder("pId").longOpt("publicationId").desc("Publication identifier for R@SM-ReadersourcingServerSide.").hasArg().argName("Publication Identifier").build()
+        options.addOption(source)
         return options
+
     }
 
 }

@@ -47,16 +47,16 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.main.class>it.medialab.pdfxreadersourcing.program.Program</project.main.class>
         <project.fat.jar.name>${project.artifactId}-${project.version}-jar-with-dependencies</project.fat.jar.name>
-        <local.server.output.dir.one>E:\Dropbox\Documenti\Progetti\R@SM\</local.server.output.dir.one>
+        <local.server.output.dir.one>M:\Dropbox\Documenti\Progetti\R@SM\</local.server.output.dir.one>
         <local.server.output.dir.two>R@SM-ReadersourcingServerSide\lib\</local.server.output.dir.two>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <kotlin.version>1.2.51</kotlin.version>
-        <kotlin.stdlib.version>1.2.51</kotlin.stdlib.version>
-        <kotlin.test.version>1.2.51</kotlin.test.version>
-        <kotlin.reflect.version>1.2.51</kotlin.reflect.version>
-        <kotlinx.version>0.23.4</kotlinx.version>
-        <kotlin.maven.plugin.version>1.2.51</kotlin.maven.plugin.version>
+        <kotlin.version>1.2.60</kotlin.version>
+        <kotlin.stdlib.version>1.2.60</kotlin.stdlib.version>
+        <kotlin.test.version>1.2.60</kotlin.test.version>
+        <kotlin.reflect.version>1.2.60</kotlin.reflect.version>
+        <kotlin.maven.plugin.version>1.2.60</kotlin.maven.plugin.version>
+        <kotlinx.version>0.24.0</kotlinx.version>
         <kotlin.compiler.incremental>true</kotlin.compiler.incremental>
         <junit.platform.version>1.2.0</junit.platform.version>
         <junit.jupiter.version>5.2.0</junit.jupiter.version>
@@ -68,6 +68,7 @@
         <log4j.api.version>2.11.0</log4j.api.version>
         <log4j.core.version>2.11.0</log4j.core.version>
         <apache.commons.cli>1.4</apache.commons.cli>
+        <apache.commons.validators>1.6</apache.commons.validators>
     </properties>
 
     <dependencies>
@@ -142,6 +143,12 @@
             <version>${apache.commons.cli}</version>
         </dependency>
 
+        <dependency>
+            <groupId>commons-validator</groupId>
+            <artifactId>commons-validator</artifactId>
+            <version>${apache.commons.validators}</version>
+        </dependency>
+
     </dependencies>
 
     <build>
@@ -154,9 +161,33 @@
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>exec-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>exec</goal>
+                        </goals>
+                    </execution>
+                </executions>
                 <version>1.6.0</version>
                 <configuration>
+                    <executable>maven</executable>
                     <mainClass>${project.main.class}</mainClass>
+                    <arguments>
+                        <argument>-pIn</argument>
+                        <!--suppress UnresolvedMavenProperty -->
+                        <argument>M:\Dropbox\Documenti\Progetti\R@SM\R@SM-PDFxReadersourcing\data\Reader.pdf</argument>
+                        <argument>-pOut</argument>
+                        <!--suppress UnresolvedMavenProperty -->
+                        <argument>M:\Dropbox\Documenti\Progetti\R@SM\R@SM-PDFxReadersourcing\res\</argument>
+                        <argument>-c</argument>
+                        <argument>Clicca qua</argument>
+                        <argument>-u</argument>
+                        <argument>http://google.it</argument>
+                        <argument>-a</argument>
+                        <argument>eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE1MzQyNTIxNzl9.Qz2m-Q4hF2AGeIB7uwILY4AdQGOCzbdmnj2QhC5w5NI</argument>
+                        <argument>-pId</argument>
+                        <argument>1</argument>
+                    </arguments>
                 </configuration>
             </plugin>
 

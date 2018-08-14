@@ -20,6 +20,10 @@ class PublicationModel {
     private lateinit var mimeType: String
     private lateinit var inputPath: String
     private lateinit var outputPath: String
+    private lateinit var caption: String
+    private lateinit var url: String
+    private var authenticationToken: String? = null
+    private var publicationIdentifier: String? = null
     private var numberOfPages = 0
     private var logger = LogManager.getLogger()
 
@@ -64,8 +68,18 @@ class PublicationModel {
         logger.info("---------- PUBLICATION DATA END ----------")
     }
 
-    fun addLink(text: String, url: String) {
-        logger.info("Adding link to \"$name.pdf\"")
+    fun addUrl(parameters: Parameters) {
+
+        caption = parameters.caption
+        url = parameters.url
+        authenticationToken = parameters.authenticationToken
+        publicationIdentifier = parameters.publicationIdentifier
+
+        logger.info("Adding URL with caption to \"$name.pdf\"")
+        logger.info("URL: $url")
+        logger.info("Caption: $caption")
+        logger.info("Authentication Token: $authenticationToken")
+        logger.info("Publication Identifier: $publicationIdentifier")
 
         val newPage = PDPage()
         val contentStream = PDPageContentStream(publication, newPage, PDPageContentStream.AppendMode.APPEND, false)
@@ -84,36 +98,36 @@ class PublicationModel {
         contentStream.newLineAtOffset(offsetX, upperRightY - offsetY)
         contentStream.showText("Before you go...")
         contentStream.newLine()
-        contentStream.showText(text)
+        contentStream.showText(caption)
         contentStream.newLine()
         contentStream.showText("Thank you!")
         contentStream.endText()
         contentStream.close()
 
-        val caption = PDAnnotationLink()
+        val annotation = PDAnnotationLink()
         val underline = PDBorderStyleDictionary()
         underline.style = PDBorderStyleDictionary.STYLE_UNDERLINE
-        caption.borderStyle = underline
+        annotation.borderStyle = underline
 
-        val textWidth = font.getStringWidth(text) / 100
+        val textWidth = font.getStringWidth(caption) / 100
         val position = PDRectangle()
         position.lowerLeftX = offsetX
         position.lowerLeftY = upperRightY - (offsetY + (fontSize * (lineCounter - 1)))
         position.upperRightX = offsetX + textWidth
         position.upperRightY = upperRightY
-        caption.rectangle = position
+        annotation.rectangle = position
 
         val action = PDActionURI()
         action.uri = url
-        caption.action = action
+        annotation.action = action
 
-        newPage.annotations.add(caption)
+        newPage.annotations.add(annotation)
 
         publication.addPage(newPage)
         publication.save(outputPath)
         publication.close()
 
-        logger.info("Link added successfully.")
+        logger.info("URL added successfully.")
         logger.info("Updated file path:")
         logger.info(outputPath)
     }
