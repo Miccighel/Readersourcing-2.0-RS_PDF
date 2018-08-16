@@ -76,11 +76,8 @@ object Program {
                 logger.info("Path: $publicationOutputPath")
             }
 
-            val urlValidator = UrlValidator()
-            if (urlValidator.isValid(commandLine.getOptionValue("u"))) {
-                url = commandLine.getOptionValue("u")
-                logger.info("URL found: $url")
-            } else throw ParseException("Value for the option <<u>> or <<Url>> must be a valid URL. Check the usage section below.")
+            url = commandLine.getOptionValue("u")
+            logger.info("URL found: $url")
 
             caption = commandLine.getOptionValue("c")
             logger.info("Caption found: $caption")
@@ -125,6 +122,7 @@ object Program {
             logger.info("${Constants.PROGRAM_NAME} execution terminated.")
 
         } catch (exception: FileNotFoundException) {
+
             logger.error(exception.message)
             logger.info("${Constants.PROGRAM_NAME} execution terminated.")
 
@@ -143,17 +141,17 @@ object Program {
     private fun loadCommandLineOptions(): Options {
 
         val options = Options()
-        var source = Option.builder("pIn").longOpt("pathIn").desc("Relative path to the input file/directory.").hasArg().argName("Source File/Directory").build()
+        var source = Option.builder("pIn").longOpt("pathIn").desc("Relative path to the input file/directory. It must be used with <<pOut>> or <<pathOut>> option. [OPTIONAL]").hasArg().argName("Source File/Directory").build()
         options.addOption(source)
-        source = Option.builder("pOut").longOpt("pathOut").desc("Relative path to the output directory.").hasArg().argName("Result Directory").build()
+        source = Option.builder("pOut").longOpt("pathOut").desc("Relative path to the output directory. It must be used with <<pIn>> or <<pathIn>> option. [OPTIONAL]").hasArg().argName("Result Directory").build()
         options.addOption(source)
         source = Option.builder("c").longOpt("caption").desc("Caption for the URL to add. [REQUIRED]").hasArg().argName("Caption").required().build()
         options.addOption(source)
         source = Option.builder("u").longOpt("url").desc("URL to add. It must be a valid URL. [REQUIRED]").hasArg().argName("Url").required().build()
         options.addOption(source)
-        source = Option.builder("a").longOpt("authToken").desc("Authentication token for R@SM-ReadersourcingServerSide.").hasArg().argName("Authentication Token").build()
+        source = Option.builder("a").longOpt("authToken").desc("Authentication token for R@SM-ReadersourcingServerSide. It must be used with options <<pIn>> or <<pathIn>>,  <<pOut>> or <<pathOut>> and  <<pId>> or <<publicationId>> [OPTIONAL]").hasArg().argName("Authentication Token").build()
         options.addOption(source)
-        source = Option.builder("pId").longOpt("publicationId").desc("Publication identifier for R@SM-ReadersourcingServerSide.").hasArg().argName("Publication Identifier").build()
+        source = Option.builder("pId").longOpt("publicationId").desc("Publication identifier for R@SM-ReadersourcingServerSide. It must be used with options <<pIn>> or <<pathIn>>,  <<pOut>> or <<pathOut>> and  <<a>> or <<authToken>> [OPTIONAL]").hasArg().argName("Publication Identifier").build()
         options.addOption(source)
         return options
 

@@ -1,6 +1,7 @@
 package it.medialab.pdfxreadersourcing.publications
 
 import it.medialab.pdfxreadersourcing.utils.Constants
+import org.apache.http.client.utils.URIBuilder
 import org.apache.logging.log4j.LogManager
 import org.apache.pdfbox.pdmodel.PDDocument
 import org.apache.pdfbox.pdmodel.PDPage
@@ -11,6 +12,7 @@ import org.apache.pdfbox.pdmodel.interactive.action.PDActionURI
 import org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotationLink
 import org.apache.pdfbox.pdmodel.interactive.annotation.PDBorderStyleDictionary
 import java.io.File
+import java.net.URL
 import java.nio.file.Files
 
 class PublicationModel {
@@ -18,13 +20,17 @@ class PublicationModel {
     private lateinit var publication: PDDocument
     private lateinit var name: String
     private lateinit var mimeType: String
+    private var pageWidth = 0.0F
+    private var pageHeight = 0.0F
+    private var numberOfPages = 0
+
     private lateinit var inputPath: String
     private lateinit var outputPath: String
     private lateinit var caption: String
     private lateinit var url: String
     private var authenticationToken: String? = null
     private var publicationIdentifier: String? = null
-    private var numberOfPages = 0
+
     private var logger = LogManager.getLogger()
 
     fun loadData(publication: File) {
@@ -41,6 +47,9 @@ class PublicationModel {
 
     private fun updateData(publication: File) {
         this.publication = PDDocument.load(publication)
+        val lastPage = this. publication.documentCatalog.pages.last()
+        this.pageWidth = lastPage.mediaBox.width
+        this.pageHeight = lastPage.mediaBox.height
         this.name = publication.nameWithoutExtension
         this.mimeType = Files.probeContentType(publication.toPath())
         this.numberOfPages = this.publication.numberOfPages
@@ -56,6 +65,12 @@ class PublicationModel {
         logger.info("Mime type:")
         logger.info(mimeType)
 
+        logger.info("Page width:")
+        logger.info("$pageWidth pt")
+
+        logger.info("Page height:")
+        logger.info("$pageHeight pt")
+
         logger.info("Number of Pages:")
         logger.info(numberOfPages)
 
@@ -69,38 +84,45 @@ class PublicationModel {
     }
 
     fun addUrl(parameters: Parameters) {
-
         caption = parameters.caption
         url = parameters.url
         authenticationToken = parameters.authenticationToken
         publicationIdentifier = parameters.publicationIdentifier
 
         logger.info("Adding URL with caption to \"$name.pdf\"")
-        logger.info("URL: $url")
+        logger.info("Base URL: $url")
         logger.info("Caption: $caption")
-        logger.info("Authentication Token: $authenticationToken")
-        logger.info("Publication Identifier: $publicationIdentifier")
+        publicationIdentifier?.let {
+            logger.info("Publication Identifier: $it")
+        }
+        authenticationToken?.let {
+            logger.info("Authentication Token: $it")
+        }
 
-        val newPage = PDPage()
+        logger.info("New page construction started.")
+
+        val newPage = PDPage(PDRectangle(pageWidth, pageHeight))
         val contentStream = PDPageContentStream(publication, newPage, PDPageContentStream.AppendMode.APPEND, false)
 
         val font = PDType1Font.HELVETICA
         val upperRightY = newPage.mediaBox.upperRightY
-        val lineCounter = 3
+        val lineCounter = 5
         val offsetX = 55F
         val offsetY = 40F
         val leading = 15F
-        val fontSize = 10F
+        val fontSize = 9F
 
         contentStream.beginText()
         contentStream.setFont(font, fontSize)
         contentStream.setLeading(leading)
         contentStream.newLineAtOffset(offsetX, upperRightY - offsetY)
-        contentStream.showText("Before you go...")
+        contentStream.showText("---------- READERSOURCING START -----------")
+        contentStream.newLine()
         contentStream.newLine()
         contentStream.showText(caption)
         contentStream.newLine()
-        contentStream.showText("Thank you!")
+        contentStream.newLine()
+        contentStream.showText("---------- READERSOURCING END ----------")
         contentStream.endText()
         contentStream.close()
 
@@ -113,7 +135,7 @@ class PublicationModel {
         val position = PDRectangle()
         position.lowerLeftX = offsetX
         position.lowerLeftY = upperRightY - (offsetY + (fontSize * (lineCounter - 1)))
-        position.upperRightX = offsetX + textWidth
+        position.upperRightX = (offsetX + textWidth)
         position.upperRightY = upperRightY
         annotation.rectangle = position
 
@@ -126,6 +148,8 @@ class PublicationModel {
         publication.addPage(newPage)
         publication.save(outputPath)
         publication.close()
+
+        logger.info("New page construction completed.")
 
         logger.info("URL added successfully.")
         logger.info("Updated file path:")

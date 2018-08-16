@@ -46,7 +46,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.main.class>it.medialab.pdfxreadersourcing.program.Program</project.main.class>
-        <project.fat.jar.name>${project.artifactId}-${project.version}-jar-with-dependencies</project.fat.jar.name>
+        <project.fat.jar.name>PDFxReadersourcing-1.0-SNAPSHOT-jar-with-dependencies.jar</project.fat.jar.name>
         <local.server.output.dir.one>M:\Dropbox\Documenti\Progetti\R@SM\</local.server.output.dir.one>
         <local.server.output.dir.two>R@SM-ReadersourcingServerSide\lib\</local.server.output.dir.two>
         <maven.compiler.source>1.8</maven.compiler.source>
@@ -69,6 +69,7 @@
         <log4j.core.version>2.11.0</log4j.core.version>
         <apache.commons.cli>1.4</apache.commons.cli>
         <apache.commons.validators>1.6</apache.commons.validators>
+        <apache.httpclient.version>4.5.6</apache.httpclient.version>
     </properties>
 
     <dependencies>
@@ -149,6 +150,12 @@
             <version>${apache.commons.validators}</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>${apache.httpclient.version}</version>
+        </dependency>
+
     </dependencies>
 
     <build>
@@ -180,7 +187,7 @@
                         <!--suppress UnresolvedMavenProperty -->
                         <argument>M:\Dropbox\Documenti\Progetti\R@SM\R@SM-PDFxReadersourcing\res\</argument>
                         <argument>-c</argument>
-                        <argument>Clicca qua</argument>
+                        <argument>Link per la pagina di voto</argument>
                         <argument>-u</argument>
                         <argument>http://google.it</argument>
                         <argument>-a</argument>
@@ -332,7 +339,7 @@
                             <resources>
                                 <resource>
                                     <directory>${project.build.directory}</directory>
-                                    <include>${project.fat.jar.name}.jar</include>
+                                    <include>${project.fat.jar.name}</include>
                                     <filtering>false</filtering>
                                 </resource>
                             </resources>
