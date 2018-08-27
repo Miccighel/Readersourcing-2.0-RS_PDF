@@ -47,15 +47,19 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.main.class>it.medialab.pdfxreadersourcing.program.Program</project.main.class>
         <project.fat.jar.name>PDFxReadersourcing-1.0-SNAPSHOT-jar-with-dependencies.jar</project.fat.jar.name>
-        <local.server.output.dir.one>M:\Dropbox\Documenti\Progetti\R@SM\</local.server.output.dir.one>
+        <!-- NZXT PATH -->
+        <!--<local.server.output.dir.one>M:\Dropbox\Documenti\Progetti\R@SM\</local.server.output.dir.one>-->
+        <!-- SANTECH C37 PATH -->
+        <local.server.output.dir.one>E:\Dropbox\Documenti\Progetti\R@SM\</local.server.output.dir.one>
+        <!-- SANTECH C37 PATH -->
         <local.server.output.dir.two>R@SM-ReadersourcingServerSide\lib\</local.server.output.dir.two>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <kotlin.version>1.2.60</kotlin.version>
-        <kotlin.stdlib.version>1.2.60</kotlin.stdlib.version>
-        <kotlin.test.version>1.2.60</kotlin.test.version>
-        <kotlin.reflect.version>1.2.60</kotlin.reflect.version>
-        <kotlin.maven.plugin.version>1.2.60</kotlin.maven.plugin.version>
+        <kotlin.version>1.2.61</kotlin.version>
+        <kotlin.stdlib.version>1.2.61</kotlin.stdlib.version>
+        <kotlin.test.version>1.2.61</kotlin.test.version>
+        <kotlin.reflect.version>1.2.61</kotlin.reflect.version>
+        <kotlin.maven.plugin.version>1.2.61</kotlin.maven.plugin.version>
         <kotlinx.version>0.24.0</kotlinx.version>
         <kotlin.compiler.incremental>true</kotlin.compiler.incremental>
         <junit.platform.version>1.2.0</junit.platform.version>
