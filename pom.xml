@@ -69,6 +69,7 @@
         <maven.jar-plugin.version>3.1.0</maven.jar-plugin.version>
         <maven.surefire-plugin.version>2.22.0</maven.surefire-plugin.version>
         <maven.resource-plugin.version>3.1.0</maven.resource-plugin.version>
+        <maven.clean-plugin.version>3.1.0</maven.clean-plugin.version>
         <log4j.api.version>2.11.0</log4j.api.version>
         <log4j.core.version>2.11.0</log4j.core.version>
         <apache.commons.cli>1.4</apache.commons.cli>
@@ -170,6 +171,23 @@
         <plugins>
 
             <plugin>
+                <artifactId>maven-clean-plugin</artifactId>
+                <version>${maven.clean-plugin.version}</version>
+                <configuration>
+                    <filesets>
+                        <fileset>
+                            <directory>log/</directory>
+                            <followSymlinks>false</followSymlinks>
+                        </fileset>
+                        <fileset>
+                            <directory>res/</directory>
+                            <followSymlinks>false</followSymlinks>
+                        </fileset>
+                    </filesets>
+                </configuration>
+            </plugin>
+
+            <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>exec-maven-plugin</artifactId>
                 <executions>
@@ -184,20 +202,20 @@
                     <executable>maven</executable>
                     <mainClass>${project.main.class}</mainClass>
                     <arguments>
-                        <argument>-pIn</argument>
+                        <!--<argument>-pIn</argument>-->
                         <!--suppress UnresolvedMavenProperty -->
-                        <argument>M:\Dropbox\Documenti\Progetti\R@SM\R@SM-PDFxReadersourcing\data\Reader.pdf</argument>
-                        <argument>-pOut</argument>
+                        <!--<argument>M:\Dropbox\Documenti\Progetti\R@SM\R@SM-PDFxReadersourcing\data\Reader.pdf</argument>-->
+                        <!--<argument>-pOut</argument>-->
                         <!--suppress UnresolvedMavenProperty -->
-                        <argument>M:\Dropbox\Documenti\Progetti\R@SM\R@SM-PDFxReadersourcing\res\</argument>
+                        <!--<argument>M:\Dropbox\Documenti\Progetti\R@SM\R@SM-PDFxReadersourcing\res\</argument>-->
                         <argument>-c</argument>
-                        <argument>Link per la pagina di voto</argument>
+                        <!--<argument>Link per la pagina di voto</argument>-->
                         <argument>-u</argument>
                         <argument>http://google.it</argument>
-                        <argument>-a</argument>
-                        <argument>eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE1MzQyNTIxNzl9.Qz2m-Q4hF2AGeIB7uwILY4AdQGOCzbdmnj2QhC5w5NI</argument>
-                        <argument>-pId</argument>
-                        <argument>1</argument>
+                        <!--<argument>-a</argument>-->
+                        <!--<argument>eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE1MzQyNTIxNzl9.Qz2m-Q4hF2AGeIB7uwILY4AdQGOCzbdmnj2QhC5w5NI</argument>-->
+                        <!--<argument>-pId</argument>-->
+                        <!--<argument>1</argument>-->
                     </arguments>
                 </configuration>
             </plugin>
