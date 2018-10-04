@@ -40,7 +40,7 @@
             <AppenderRef ref="Console-Main"/>
             <AppenderRef ref="Rolling"/>
         </Root>
-        <Logger name="it.medialab.pdfxreadersourcing.program.Program" additivity="false">
+        <Logger name="it.uniud.readersourcing2.program.Program" additivity="false">
             <AppenderRef ref="Console-Program"/>
         </Logger>
     </Loggers>

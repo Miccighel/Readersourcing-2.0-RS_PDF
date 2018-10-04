@@ -1,11 +1,10 @@
-package it.medialab.pdfxreadersourcing.program
+package it.uniud.readersourcing2.program
 
-import it.medialab.pdfxreadersourcing.publications.Parameters
-import it.medialab.pdfxreadersourcing.publications.PublicationController
-import it.medialab.pdfxreadersourcing.utils.Constants
-import it.medialab.pdfxreadersourcing.utils.Tools.updateLogger
+import it.uniud.readersourcing2.publications.Parameters
+import it.uniud.readersourcing2.publications.PublicationController
+import it.uniud.readersourcing2.utils.Constants
+import it.uniud.readersourcing2.utils.Tools.updateLogger
 import org.apache.commons.cli.*
-import org.apache.commons.validator.routines.UrlValidator
 import org.apache.logging.log4j.Level
 import org.apache.logging.log4j.LogManager
 import org.apache.logging.log4j.Logger

@@ -1,7 +1,6 @@
-package it.medialab.pdfxreadersourcing.publications
+package it.uniud.readersourcing2.publications
 
-import it.medialab.pdfxreadersourcing.utils.Constants
-import org.apache.http.client.utils.URIBuilder
+import it.uniud.readersourcing2.utils.Constants
 import org.apache.logging.log4j.LogManager
 import org.apache.pdfbox.pdmodel.PDDocument
 import org.apache.pdfbox.pdmodel.PDPage
@@ -12,7 +11,6 @@ import org.apache.pdfbox.pdmodel.interactive.action.PDActionURI
 import org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotationLink
 import org.apache.pdfbox.pdmodel.interactive.annotation.PDBorderStyleDictionary
 import java.io.File
-import java.net.URL
 import java.nio.file.Files
 
 class PublicationModel {

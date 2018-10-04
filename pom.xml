@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
-    <groupId>it.medialab.pdfxreadersourcing</groupId>
+    <groupId>it.uniud.readersourcing2</groupId>
     <artifactId>RS_PDF</artifactId>
     <version>1.0</version>
 
@@ -45,7 +45,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <project.main.class>it.medialab.pdfxreadersourcing.program.Program</project.main.class>
+        <project.main.class>it.uniud.readersourcing2.program.Program</project.main.class>
         <project.fat.jar.name>RS_PDF-1.0-jar-with-dependencies.jar</project.fat.jar.name>
         <!-- NZXT PATH -->
         <!--<local.server.output.dir>M:\Dropbox\Documenti\Progetti\Uniud\Readersourcing-2.0\RS_Server\lib\</local.server.output.dir>-->

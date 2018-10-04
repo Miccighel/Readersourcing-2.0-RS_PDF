@@ -1,4 +1,4 @@
-package it.medialab.pdfxreadersourcing.program
+package it.uniud.readersourcing2.program
 
 import org.junit.jupiter.api.DisplayName
 import org.junit.jupiter.api.Test

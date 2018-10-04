@@ -1,6 +1,6 @@
-package it.medialab.pdfxreadersourcing.publications
+package it.uniud.readersourcing2.publications
 
-import it.medialab.pdfxreadersourcing.utils.Constants
+import it.uniud.readersourcing2.utils.Constants
 import org.apache.logging.log4j.LogManager
 import java.io.File
 import java.io.FileNotFoundException

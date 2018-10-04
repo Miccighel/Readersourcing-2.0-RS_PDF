@@ -1,4 +1,4 @@
-package it.medialab.pdfxreadersourcing.utils
+package it.uniud.readersourcing2.utils
 
 import org.apache.logging.log4j.Level
 import org.apache.logging.log4j.LogManager
