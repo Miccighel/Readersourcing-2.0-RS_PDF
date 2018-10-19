@@ -148,9 +148,9 @@ object Program {
         options.addOption(source)
         source = Option.builder("u").longOpt("url").desc("URL to add. It must be a valid URL. [REQUIRED]").hasArg().argName("Url").required().build()
         options.addOption(source)
-        source = Option.builder("a").longOpt("authToken").desc("Authentication token for R@SM-ReadersourcingServerSide. It must be used with options <<pIn>> or <<pathIn>>,  <<pOut>> or <<pathOut>> and  <<pId>> or <<publicationId>> [OPTIONAL]").hasArg().argName("Authentication Token").build()
+        source = Option.builder("a").longOpt("authToken").desc("Authentication token for RS_Server. It must be used with options <<pIn>> or <<pathIn>>,  <<pOut>> or <<pathOut>> and  <<pId>> or <<publicationId>> [OPTIONAL]").hasArg().argName("Authentication Token").build()
         options.addOption(source)
-        source = Option.builder("pId").longOpt("publicationId").desc("Publication identifier for R@SM-ReadersourcingServerSide. It must be used with options <<pIn>> or <<pathIn>>,  <<pOut>> or <<pathOut>> and  <<a>> or <<authToken>> [OPTIONAL]").hasArg().argName("Publication Identifier").build()
+        source = Option.builder("pId").longOpt("publicationId").desc("Publication identifier for RS_Server. It must be used with options <<pIn>> or <<pathIn>>,  <<pOut>> or <<pathOut>> and  <<a>> or <<authToken>> [OPTIONAL]").hasArg().argName("Publication Identifier").build()
         options.addOption(source)
         return options
 

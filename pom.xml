@@ -207,7 +207,7 @@
                         <!--suppress UnresolvedMavenProperty -->
                         <!--<argument>M:\Dropbox\Documenti\Progetti\R@SM\R@SM-PDFxReadersourcing\res\</argument>-->
                         <argument>-c</argument>
-                        <!--<argument>Link per la pagina di voto</argument>-->
+                        <argument>Link per la pagina di voto</argument>
                         <argument>-u</argument>
                         <argument>http://google.it</argument>
                         <!--<argument>-a</argument>-->
