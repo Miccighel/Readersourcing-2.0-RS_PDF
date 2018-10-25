@@ -70,6 +70,7 @@
         <maven.clean-plugin.version>3.1.0</maven.clean-plugin.version>
         <log4j.api.version>2.11.1</log4j.api.version>
         <log4j.core.version>2.11.1</log4j.core.version>
+        <apache.pdfbox.version>2.0.12</apache.pdfbox.version>
         <apache.commons.cli>1.4</apache.commons.cli>
         <apache.commons.validators>1.6</apache.commons.validators>
         <apache.httpclient.version>4.5.6</apache.httpclient.version>
@@ -127,7 +128,7 @@
         <dependency>
             <groupId>org.apache.pdfbox</groupId>
             <artifactId>pdfbox</artifactId>
-            <version>2.0.11</version>
+            <version>${apache.pdfbox.version}</version>
         </dependency>
 
         <dependency>

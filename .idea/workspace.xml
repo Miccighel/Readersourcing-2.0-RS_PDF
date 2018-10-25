@@ -4,8 +4,7 @@
     <list default="true" id="9083520d-b9ff-4dc1-bd1b-1036df08af65" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/it/uniud/readersourcing2/program/Program.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/it/uniud/readersourcing2/program/Program.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/it/uniud/readersourcing2/utils/Constants.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/it/uniud/readersourcing2/utils/Constants.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/it/uniud/readersourcing2/publications/PublicationModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/it/uniud/readersourcing2/publications/PublicationModel.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -226,49 +225,50 @@
     <session id="-697405572">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="9" />
+          <entry key="project.closed" value="11" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.10" value="2" />
+          <entry key="project.open.time.10" value="3" />
           <entry key="project.open.time.11" value="2" />
+          <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.9" value="2" />
-          <entry key="project.opened" value="9" />
+          <entry key="project.opened" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="kt" value="5" />
-          <entry key="xml" value="1" />
+          <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Kotlin" value="5" />
-          <entry key="XML" value="1" />
+          <entry key="XML" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="kt" value="115" />
-          <entry key="xml" value="92" />
+          <entry key="kt" value="167" />
+          <entry key="xml" value="134" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Kotlin" value="115" />
-          <entry key="XML" value="92" />
+          <entry key="Kotlin" value="167" />
+          <entry key="XML" value="134" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="209" column="71" selection-start-line="209" selection-start-column="71" selection-end-line="209" selection-end-column="71" />
+            <state relative-caret-position="412">
+              <caret line="126" selection-start-line="126" selection-end-line="126" />
             </state>
           </provider>
         </entry>
@@ -276,8 +276,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/it/uniud/readersourcing2/publications/PublicationModel.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-47">
-              <caret line="84" column="36" lean-forward="true" selection-start-line="84" selection-start-column="36" selection-end-line="84" selection-end-column="36" />
+            <state relative-caret-position="225">
+              <caret line="122" column="82" selection-start-line="122" selection-start-column="82" selection-end-line="122" selection-end-column="82" />
               <folding>
                 <element signature="e#47#640#0" expanded="true" />
               </folding>
@@ -288,7 +288,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/it/uniud/readersourcing2/publications/PublicationController.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="625">
+            <state relative-caret-position="1554">
               <caret line="79" column="23" selection-start-line="79" selection-start-column="23" selection-end-line="79" selection-end-column="23" />
               <folding>
                 <element signature="e#47#248#0" expanded="true" />
@@ -306,11 +306,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/it/uniud/readersourcing2/program/Program.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="118" column="36" selection-start-line="118" selection-start-column="36" selection-end-line="118" selection-end-column="36" />
+            <state relative-caret-position="1680">
+              <caret line="89" column="77" selection-start-line="89" selection-start-column="77" selection-end-line="89" selection-end-column="77" />
             </state>
           </provider>
         </entry>
@@ -339,6 +339,7 @@
     <findStrings>
       <find>reflect</find>
       <find>jar</find>
+      <find>pdf</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -361,9 +362,9 @@
         <option value="$PROJECT_DIR$/src/main/kotlin/it/medialab/pdfxreadersourcing/program/Program.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/it/medialab/pdfxreadersourcing/publications/PublicationModel.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/it/uniud/readersourcing2/publications/PublicationController.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/it/uniud/readersourcing2/publications/PublicationModel.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/it/uniud/readersourcing2/program/Program.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/it/uniud/readersourcing2/utils/Constants.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/it/uniud/readersourcing2/publications/PublicationModel.kt" />
         <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
@@ -391,11 +392,6 @@
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="RS_PDF" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="RS_PDF" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Run Configurations" type="21c1f71a:MavenProjectsStructure$RunConfigurationsNode" />
         </path>
       </expand>
@@ -415,7 +411,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -427,6 +422,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -844,6 +840,8 @@
       <workItem from="1538657292187" duration="834000" />
       <workItem from="1539961681169" duration="520000" />
       <workItem from="1539962816137" duration="765000" />
+      <workItem from="1540455222809" duration="469000" />
+      <workItem from="1540459494677" duration="811000" />
     </task>
     <servers />
   </component>
@@ -856,7 +854,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77820000" />
+    <option name="totallyTimeSpent" value="79100000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -876,10 +874,10 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
-      <window_info id="Structure" order="5" sideWeight="0.45828697" side_tool="true" visible="true" weight="0.23588924" />
+      <window_info id="Structure" order="5" sideWeight="0.4608108" side_tool="true" visible="true" weight="0.2401491" />
       <window_info id="Favorites" order="6" sideWeight="0.4053452" side_tool="true" weight="0.20010729" />
-      <window_info active="true" content_ui="combo" id="Project" order="7" sideWeight="0.541713" visible="true" weight="0.23588924" />
-      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.3544776" weight="0.17745535" />
+      <window_info content_ui="combo" id="Project" order="7" sideWeight="0.53918916" visible="true" weight="0.2401491" />
+      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.3544776" visible="true" weight="0.17686318" />
       <window_info anchor="bottom" id="Messages" order="1" sideWeight="0.46723953" weight="0.2932862" />
       <window_info anchor="bottom" x="0" y="23" width="1920" height="1017" id="Run" order="2" sideWeight="0.4099147" type="WINDOWED" weight="0.22358176" />
       <window_info anchor="bottom" id="TODO" order="3" sideWeight="0.4936034" weight="0.18191965" />
@@ -897,7 +895,7 @@
       <window_info anchor="right" id="Palette&#9;" order="1" />
       <window_info anchor="right" id="Capture Analysis" order="2" />
       <window_info anchor="right" id="Properties" order="3" />
-      <window_info anchor="right" id="Maven Projects" order="4" sideWeight="0.49797022" weight="0.22121535" />
+      <window_info anchor="right" id="Maven Projects" order="4" sideWeight="0.49797022" visible="true" weight="0.22097977" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Commander" order="6" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
@@ -961,17 +959,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/it/uniud/readersourcing2/publications/PublicationController.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="209" column="71" selection-start-line="209" selection-start-column="71" selection-end-line="209" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/it/uniud/readersourcing2/utils/Constants.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+        <state relative-caret-position="1554">
+          <caret line="79" column="23" selection-start-line="79" selection-start-column="23" selection-end-line="79" selection-end-column="23" />
+          <folding>
+            <element signature="e#47#248#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -982,30 +976,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/it/uniud/readersourcing2/publications/PublicationController.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/it/uniud/readersourcing2/program/Program.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
-          <caret line="79" column="23" selection-start-line="79" selection-start-column="23" selection-end-line="79" selection-end-column="23" />
-          <folding>
-            <element signature="e#47#248#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="1680">
+          <caret line="89" column="77" selection-start-line="89" selection-start-column="77" selection-end-line="89" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/it/uniud/readersourcing2/utils/Constants.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/it/uniud/readersourcing2/publications/PublicationModel.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-47">
-          <caret line="84" column="36" lean-forward="true" selection-start-line="84" selection-start-column="36" selection-end-line="84" selection-end-column="36" />
+        <state relative-caret-position="225">
+          <caret line="122" column="82" selection-start-line="122" selection-start-column="82" selection-end-line="122" selection-end-column="82" />
           <folding>
             <element signature="e#47#640#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/it/uniud/readersourcing2/program/Program.kt">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="118" column="36" selection-start-line="118" selection-start-column="36" selection-end-line="118" selection-end-column="36" />
+        <state relative-caret-position="412">
+          <caret line="126" selection-start-line="126" selection-end-line="126" />
         </state>
       </provider>
     </entry>
