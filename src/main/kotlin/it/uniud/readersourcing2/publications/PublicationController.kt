@@ -75,10 +75,6 @@ class PublicationController {
 
     }
 
-    fun addUrl(parameters: Parameters) {
-        models.forEach { model ->
-            model.addUrl(parameters)
-        }
-    }
+    fun addUrl(parameters: Parameters) = models.forEach { it.addUrl(parameters) }
 
 }

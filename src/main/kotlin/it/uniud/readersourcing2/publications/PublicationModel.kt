@@ -45,7 +45,7 @@ class PublicationModel {
 
     private fun updateData(publication: File) {
         this.publication = PDDocument.load(publication)
-        val lastPage = this. publication.documentCatalog.pages.last()
+        val lastPage = this.publication.documentCatalog.pages.last()
         this.pageWidth = lastPage.mediaBox.width
         this.pageHeight = lastPage.mediaBox.height
         this.name = publication.nameWithoutExtension
@@ -90,12 +90,8 @@ class PublicationModel {
         logger.info("Adding URL with caption to \"$name.pdf\"")
         logger.info("Base URL: $url")
         logger.info("Caption: $caption")
-        publicationIdentifier?.let {
-            logger.info("Publication Identifier: $it")
-        }
-        authenticationToken?.let {
-            logger.info("Authentication Token: $it")
-        }
+        publicationIdentifier?.let { logger.info("Publication Identifier: $it") }
+        authenticationToken?.let { logger.info("Authentication Token: $it") }
 
         logger.info("New page construction started.")
 
