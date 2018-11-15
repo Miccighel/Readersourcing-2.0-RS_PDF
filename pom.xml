@@ -6,7 +6,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>it.uniud.readersourcing2</groupId>
     <artifactId>RS_PDF</artifactId>
-    <version>1.0</version>
+    <version>v1.0.3-alpha</version>
 
     <organization>
         <name>SISSA Medialab</name>
@@ -46,7 +46,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.main.class>it.uniud.readersourcing2.program.Program</project.main.class>
-        <project.fat.jar.name>RS_PDF-1.0-jar-with-dependencies.jar</project.fat.jar.name>
+        <project.fat.jar.name>RS_PDF-v1.0.3-alpha-jar-with-dependencies.jar</project.fat.jar.name>
         <!-- NZXT PATH -->
         <!--<local.server.output.dir>M:\Dropbox\Documenti\Progetti\Uniud\Readersourcing-2.0\RS_Server\lib\</local.server.output.dir>-->
         <!-- SANTECH C37 PATH -->
