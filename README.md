@@ -13,7 +13,7 @@ RS_PDF is the software library which is exploited by <a href="https://github.com
 
 <h1>Installation</h1>
 
-RS_PDF comes bundled with RS_Server, so when the latter is deployed there is not the need to manually install the former. Nevertheless, it is possible to use it independently; it is sufficient to download the attached .jar files from the release section of this repository and place it somewhere on your filesystem. 
+RS_PDF comes bundled with RS_Server, so when the latter is deployed there is no need to manually install the former. Nevertheless, it is possible to use it independently; it is sufficient to download the attached .jar files from the release section of this repository and place it somewhere on your filesystem. 
 
 <h1>Requirements</h1>
 
