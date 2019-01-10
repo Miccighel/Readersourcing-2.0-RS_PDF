@@ -140,12 +140,19 @@ class PublicationModel {
         newPage.annotations.add(annotation)
 
         publication.addPage(newPage)
+
+        logger.info("New page construction completed.")
+        logger.info("URL added to new page successfully.")
+
+        logger.info("Saving URL to metadata.")
+
+        publication.documentInformation.setCustomMetadataValue("BaseUrl", url)
+
+        logger.info("URL added to metadata successfully.")
+
         publication.save(outputPath)
         publication.close()
 
-        logger.info("New page construction completed.")
-
-        logger.info("URL added successfully.")
         logger.info("Updated file path:")
         logger.info(outputPath)
     }
