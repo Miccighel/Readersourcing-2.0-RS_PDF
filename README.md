@@ -7,6 +7,7 @@ Please, note that this is an early alpha release and it is not ready for the use
 - <a href="https://zenodo.org/record/1446468">Original Article</a>
 - <a href="https://zenodo.org/record/1452397">Technical Documentation (Zenodo)</a>
 - <a href="https://github.com/Miccighel/Readersourcing-2.0-TechnicalDocumentation"> Technical Documentation (GitHub)</a>
+- <a href="https://doi.org/10.5281/zenodo.1442597">Zenodo Record</a>
 
 <h1>Description</h1>
 
