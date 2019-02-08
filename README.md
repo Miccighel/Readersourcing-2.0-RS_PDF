@@ -1,9 +1,14 @@
+<h1>Info</h1>
+
+This is the official repository of **RS_PDF**, which is part of the **Readersourcing 2.0** ecosystem. This repository is a <a href="https://git-scm.com/book/it/v2/Git-Tools-Submodules">Git Submodule</a> of the main project which can be found by taking advantage of the links below. 
+
 <h1>Read this!</h1>
 
 Please, note that this is an early alpha release and it is not ready for the use in a production environment.
 
 <h1>Useful Links</h1>
 
+- <a href="https://github.com/Miccighel/Readersourcing-2.0">Readersourcing 2.0 (GitHub)</a>
 - <a href="https://zenodo.org/record/1446468">Original Article</a>
 - <a href="https://zenodo.org/record/1452397">Technical Documentation (Zenodo)</a>
 - <a href="https://github.com/Miccighel/Readersourcing-2.0-TechnicalDocumentation"> Technical Documentation (GitHub)</a>
@@ -11,7 +16,7 @@ Please, note that this is an early alpha release and it is not ready for the use
 
 <h1>Description</h1>
 
-RS_PDF is the software library which is exploited by <a href="https://github.com/Miccighel/Readersourcing-2.0-RS_Server">RS_Server</a> to actually edit the PDF files to add the URL required when a reader requests to save for later the publication that he is reading. It is a software characterized by a command line interface and this means that RS_Server can use it directly since they are deployed one along the other, without using complex communication channels and paradigms.
+**RS_PDF** is the software library which is exploited by <a href="https://github.com/Miccighel/Readersourcing-2.0-RS_Server">RS_Server</a> to actually edit the PDF files to add the URL required when a reader requests to save for later the publication that he is reading. It is a software characterized by a command line interface and this means that RS_Server can use it directly since they are deployed one along the other, without using complex communication channels and paradigms.
 
 <h1>Installation</h1>
 
