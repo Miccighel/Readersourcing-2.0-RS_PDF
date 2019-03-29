@@ -26,15 +26,6 @@ RS_PDF comes bundled with RS_Server, so when the latter is deployed there is no 
 
  - <a href="https://www.java.com/it/download/">JRE (Java Runtime Environment)</a> >= 1.8.0;
 
-<h1>Usage</h1>
-
-The usage of RS_PDF is quite simple. To provide an execution example, let's assume a scenario in which there is the need of edit some files encoded in PDF format with the following prerequisites:
-- there is a folder containing `n` files to edit at path ```C:\data```;
-- the edited files must be saved inside a folder at path ```C:\out```;
-- the file in JAR format containing the library is called ```RS_PDF-v1.0-alpha.jar```;
-- the JAR file containing RS_PDF is located inside the folder at path ```C:\lib```;
-The execution of RS\_PDF is started with the command: ```java -jar C:\lib\RS_PDF-v1.0-alpha.jar -pIn C:\data -pOut C:\out```.
-
 <h1>Command Line Interface (CLI)</h1>
 
 The behavior of RS_PDF is configured during its startup phase by RS_Server through a set of special command-line options. For this reason, it is useful to provide a list of all the options that can be used if it is necessary to use RS_PDF in other contexts, modify its implementation or for any other reason. However, it is designed to work with a default configuration if no options are provided. This list of command line options in shown in the following table:
@@ -47,3 +38,10 @@ The behavior of RS_PDF is configured during its startup phase by RS_Server throu
 | ```--u``` | ```--url``` | Url to add. | A valid URL. | Yes | No |
 | ```--a``` | ```--authToken``` | Authentication token received from RS_Server. | A valid authentication token received RS_Server. | No | ```--pOut --pIn --pId``` |
 | ```--pId``` | ```--publicationId``` | Identifier for a publication present on RS_Server. | A valid publication identifier received from RS_Server. | No | ```--pOut --pIn --a``` |
+
+To provide an execution example, let's assume a scenario in which there is the need of edit some files encoded in PDF format with the following prerequisites:
+- there is a folder containing `n` files to edit at path ```C:\data```;
+- the edited files must be saved inside a folder at path ```C:\out```;
+- the file in JAR format containing the library is called ```RS_PDF-v1.0-alpha.jar```;
+- the JAR file containing RS_PDF is located inside the folder at path ```C:\lib```;
+The execution of RS\_PDF is started with the command: ```java -jar C:\lib\RS_PDF-v1.0-alpha.jar -pIn C:\data -pOut C:\out```.
