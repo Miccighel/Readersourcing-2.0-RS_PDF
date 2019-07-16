@@ -1,5 +1,6 @@
 package it.uniud.readersourcing2.program
 
+import com.google.zxing.WriterException
 import it.uniud.readersourcing2.publications.Parameters
 import it.uniud.readersourcing2.publications.PublicationController
 import it.uniud.readersourcing2.utils.Constants
@@ -10,6 +11,7 @@ import org.apache.logging.log4j.LogManager
 import org.apache.logging.log4j.Logger
 import java.io.File
 import java.io.FileNotFoundException
+import java.io.IOException
 
 object Program {
 
@@ -121,6 +123,16 @@ object Program {
             logger.info("${Constants.PROGRAM_NAME} execution terminated.")
 
         } catch (exception: FileNotFoundException) {
+
+            logger.error(exception.message)
+            logger.info("${Constants.PROGRAM_NAME} execution terminated.")
+
+        } catch (exception: IOException) {
+
+            logger.error(exception.message)
+            logger.info("${Constants.PROGRAM_NAME} execution terminated.")
+
+        } catch (exception: WriterException) {
 
             logger.error(exception.message)
             logger.info("${Constants.PROGRAM_NAME} execution terminated.")

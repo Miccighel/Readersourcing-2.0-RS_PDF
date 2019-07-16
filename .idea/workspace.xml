@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4b77f555-dc09-4ec8-9d73-205952cfef9e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/it/uniud/readersourcing2/program/Program.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/it/uniud/readersourcing2/program/Program.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/it/uniud/readersourcing2/publications/PublicationModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/it/uniud/readersourcing2/publications/PublicationModel.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,10 +22,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/it/uniud/readersourcing2/program/Program.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="114" column="13" lean-forward="true" selection-start-line="114" selection-start-column="13" selection-end-line="114" selection-end-column="13" />
+            <state relative-caret-position="213">
+              <caret line="121" selection-start-line="121" selection-end-line="121" />
               <folding>
-                <element signature="e#42#478#0" expanded="true" />
+                <element signature="e#42#545#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -32,8 +34,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/it/uniud/readersourcing2/publications/PublicationController.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="5" column="36" lean-forward="true" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
+            <state relative-caret-position="189">
+              <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+              <folding>
+                <element signature="e#47#248#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -41,8 +46,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/it/uniud/readersourcing2/publications/PublicationModel.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
-              <caret line="99" lean-forward="true" selection-start-line="99" selection-end-line="99" />
+            <state relative-caret-position="-655">
+              <caret line="113" column="63" lean-forward="true" selection-start-line="113" selection-start-column="63" selection-end-line="113" selection-end-column="63" />
+              <folding>
+                <element signature="e#47#868#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/it/uniud/readersourcing2/utils/Tools.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="84">
+              <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -50,8 +67,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="529">
-              <caret line="137" column="21" selection-start-line="137" selection-start-column="21" selection-end-line="137" selection-end-column="21" />
+            <state relative-caret-position="840">
+              <caret line="40" column="32" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -64,8 +81,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/it/uniud/readersourcing2/program/Program.kt" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/it/uniud/readersourcing2/publications/PublicationModel.kt" />
       </list>
     </option>
   </component>
@@ -169,6 +188,9 @@
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/target/RS_PDF-v1.0.5-alpha-jar-with-dependencies.jar" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RunDashboard">
@@ -183,7 +205,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JAR Application.Run (Default Path)">
+  <component name="RunManager" selected="Maven.Build + Pack">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -219,7 +241,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Run  (Custom Path)" type="JarApplication">
+    <configuration name="Run (Custom Path)" type="JarApplication">
       <option name="JAR_PATH" value="$PROJECT_DIR$/target/RS_PDF-v1.0.5-alpha-jar-with-dependencies.jar" />
       <option name="PROGRAM_PARAMETERS" value=" -c &quot;This is a caption&quot; -u &quot;www.google.it&quot; -pIn E:\Dropbox\Universita\Assegno\Progetti\Readersourcing-2.0\Sorgenti\RS_PDF\data\Reader.pdf -pOut E:\Dropbox\Universita\Assegno\Progetti\Readersourcing-2.0\Sorgenti\RS_PDF\res\" />
       <option name="WORKING_DIRECTORY" value="E:\Dropbox\Universita\Assegno\Progetti\Readersourcing-2.0\Sorgenti\RS_PDF" />
@@ -459,7 +481,7 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JAR Application.Run  (Custom Path)" />
+      <item itemvalue="JAR Application.Run (Custom Path)" />
       <item itemvalue="JAR Application.Run (Default Path)" />
       <item itemvalue="JUnit.Test" />
       <item itemvalue="Maven.Run" />
@@ -489,30 +511,32 @@
       <workItem from="1562835001450" duration="8000" />
       <workItem from="1562835048189" duration="1529000" />
       <workItem from="1562836843941" duration="2295000" />
+      <workItem from="1563196457993" duration="1934000" />
+      <workItem from="1563266166637" duration="2075000" />
+      <workItem from="1563278047723" duration="8760000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4190000" />
+    <option name="totallyTimeSpent" value="16959000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="2575" height="1415" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info id="Nl-Palette" order="0" />
       <window_info id="Image Layers" order="1" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
-      <window_info id="Structure" order="5" sideWeight="0.4483871" side_tool="true" weight="0.18290259" />
+      <window_info id="Structure" order="5" sideWeight="0.4497717" side_tool="true" visible="true" weight="0.16684435" />
       <window_info id="Favorites" order="6" sideWeight="0.4053452" side_tool="true" weight="0.20010729" />
-      <window_info active="true" content_ui="combo" id="Project" order="7" sideWeight="0.5516129" visible="true" weight="0.1860835" />
+      <window_info active="true" content_ui="combo" id="Project" order="7" sideWeight="0.5502283" visible="true" weight="0.16684435" />
       <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.3544776" weight="0.17903416" />
       <window_info anchor="bottom" id="Messages" order="1" sideWeight="0.46723953" weight="0.2932862" />
-      <window_info anchor="bottom" x="21" y="414" width="1878" height="222" id="Run" order="2" sideWeight="0.4099147" weight="0.26547232" />
+      <window_info anchor="bottom" x="-1920" y="23" width="1920" height="1017" id="Run" order="2" sideWeight="0.4099147" type="WINDOWED" visible="true" weight="0.2648402" />
       <window_info anchor="bottom" id="TODO" order="3" sideWeight="0.4936034" weight="0.18278302" />
       <window_info anchor="bottom" id="Message" order="4" />
-      <window_info anchor="bottom" id="Find" order="5" sideWeight="0.48933902" weight="0.32628062" />
+      <window_info anchor="bottom" id="Find" order="5" sideWeight="0.48933902" weight="0.32534248" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.6455224" side_tool="true" weight="0.24267101" />
@@ -532,20 +556,13 @@
       <window_info anchor="right" id="Remote Host" order="9" weight="0.1673774" />
       <window_info anchor="right" id="Database" order="10" sideWeight="0.5005574" side_tool="true" weight="0.15245202" />
       <window_info anchor="right" id="Ant Build" order="11" weight="0.24919441" />
-      <window_info anchor="right" id="Maven" order="12" visible="true" weight="0.18807156" />
+      <window_info anchor="right" id="Maven" order="12" visible="true" weight="0.15191898" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="137" column="21" selection-start-line="137" selection-start-column="21" selection-end-line="137" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
@@ -553,27 +570,74 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/it/uniud/readersourcing2/publications/PublicationController.kt">
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/zxing/javase/3.3.0/javase-3.3.0.jar!/com/google/zxing/client/j2se/MatrixToImageWriter.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="36" lean-forward="true" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
+        <state relative-caret-position="279">
+          <caret line="50" column="23" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="23" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/res/Shepherding the Crowd Yields Better Work-QRCode.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/Reader-QRCode.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/it/uniud/readersourcing2/program/Program.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="114" column="13" lean-forward="true" selection-start-line="114" selection-start-column="13" selection-end-line="114" selection-end-column="13" />
+        <state relative-caret-position="213">
+          <caret line="121" selection-start-line="121" selection-end-line="121" />
           <folding>
-            <element signature="e#42#478#0" expanded="true" />
+            <element signature="e#42#545#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/pdfbox/pdfbox/2.0.16/pdfbox-2.0.16.jar!/org/apache/pdfbox/pdmodel/PDPageContentStream.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="347" column="16" selection-start-line="347" selection-start-column="16" selection-end-line="347" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/it/uniud/readersourcing2/publications/PublicationController.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+          <folding>
+            <element signature="e#47#248#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/it/uniud/readersourcing2/utils/Constants.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/it/uniud/readersourcing2/utils/Tools.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="40" column="32" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/it/uniud/readersourcing2/publications/PublicationModel.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="99" lean-forward="true" selection-start-line="99" selection-end-line="99" />
+        <state relative-caret-position="-655">
+          <caret line="113" column="63" lean-forward="true" selection-start-line="113" selection-start-column="63" selection-end-line="113" selection-end-column="63" />
+          <folding>
+            <element signature="e#47#868#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -6,7 +6,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>it.uniud.readersourcing2</groupId>
     <artifactId>RS_PDF</artifactId>
-    <version>v1.0.5-alpha</version>
+    <version>v1.0.6-alpha</version>
 
     <organization>
         <name>SISSA Medialab</name>
@@ -46,7 +46,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.main.class>it.uniud.readersourcing2.program.Program</project.main.class>
-        <project.fat.jar.name>RS_PDF-v1.0.5-alpha-jar-with-dependencies.jar</project.fat.jar.name>
+        <project.fat.jar.name>RS_PDF-v1.0.6-alpha-jar-with-dependencies.jar</project.fat.jar.name>
         <local.server.output.dir>E:\Dropbox\Universita\Assegno\Progetti\Readersourcing-2.0\Sorgenti\RS_Server\lib\</local.server.output.dir>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
