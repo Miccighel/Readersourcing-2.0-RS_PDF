@@ -36,8 +36,8 @@ class PublicationModel {
     private var publicationIdentifier: String? = null
 
     private lateinit var qrCodePath: String
-    private val qrCodeHeight = 150F
-    private val qrCodeWidth = 150F
+    private val qrCodeHeight = 200F
+    private val qrCodeWidth = 200F
 
     private var logger = LogManager.getLogger()
 
@@ -68,28 +68,13 @@ class PublicationModel {
 
     private fun publicationDataToString() {
         logger.info("---------- PUBLICATION DATA BEGIN ----------")
-
-        logger.info("Name:")
-        logger.info(name)
-
-        logger.info("Mime type:")
-        logger.info(mimeType)
-
-        logger.info("Page width:")
-        logger.info("$pageWidth pt")
-
-        logger.info("Page height:")
-        logger.info("$pageHeight pt")
-
-        logger.info("Number of Pages:")
-        logger.info(numberOfPages)
-
-        logger.info("Input Path:")
-        logger.info(inputPath)
-
-        logger.info("Output Path:")
-        logger.info(outputPath)
-
+        logger.info("Name: $name")
+        logger.info("Mime type: $mimeType")
+        logger.info("Page width: $pageWidth pt")
+        logger.info("Page height: $pageHeight pt")
+        logger.info("Number of Pages: $numberOfPages")
+        logger.info("Input Path: $inputPath")
+        logger.info("Output Path: $outputPath")
         logger.info("---------- PUBLICATION DATA END ----------")
     }
 
@@ -128,8 +113,8 @@ class PublicationModel {
         val offsetY = 40F
         val leading = 15F
         val fontSize = 9F
-        val urlLineNumber = 6
-        val qrCodeLineNumber = 11
+        val urlLineNumber = 7
+        val qrCodeLineNumber = 8
 
         logger.info("Adding caption.")
 
@@ -139,23 +124,21 @@ class PublicationModel {
         contentStream.newLineAtOffset(offsetX, upperRightY - offsetY)
         contentStream.showText("------------------------------ READERSOURCING 2.0 ANNOTATION: RATING URL ------------------------------")
         contentStream.newLine()
-        contentStream.showText("Visit the following URL to rate this publication:")
+        contentStream.showText("Either follow the underlined link or scan the QR Code to rate the publication.")
         contentStream.newLine()
         contentStream.newLine()
         contentStream.showText(caption)
-        contentStream.newLine()
-        contentStream.newLine()
+        contentStream.endText()
+
+        val textWidth = (font.getStringWidth(caption) / 100) - 11
+        contentStream.moveTo(offsetX, upperRightY - (offsetY + (fontSize * urlLineNumber) - 10))
+        contentStream.lineTo(offsetX + textWidth, upperRightY - (offsetY + (fontSize * urlLineNumber) - 10))
+        contentStream.stroke();
 
         buildQRCode(url)?.let {
             logger.info("Adding QR Code.")
-
             val qrCodePDFImage = PDImageXObject.createFromFile(it.absolutePath, publication)
-
-            contentStream.showText("------------------------------ READERSOURCING 2.0 ANNOTATION: QR CODE ------------------------------")
-            contentStream.newLine()
-            contentStream.showText("Scan the following QR Code to rate this publication:")
-            contentStream.endText()
-            contentStream.drawImage(qrCodePDFImage, offsetX, upperRightY - (offsetY + ((fontSize * qrCodeLineNumber) + this.qrCodeHeight)))
+            contentStream.drawImage(qrCodePDFImage, offsetX, upperRightY - (offsetY + ((fontSize * (qrCodeLineNumber)) + this.qrCodeHeight - 18)))
             it.delete()
         }
 
@@ -164,18 +147,6 @@ class PublicationModel {
         logger.info("Adding Hyperlink.")
 
         val annotation = PDAnnotationLink()
-        val underline = PDBorderStyleDictionary()
-        underline.style = PDBorderStyleDictionary.STYLE_UNDERLINE
-        annotation.borderStyle = underline
-
-        val textWidth = (font.getStringWidth(caption) / 100) - 10
-        val position = PDRectangle()
-        position.lowerLeftX = offsetX
-        position.lowerLeftY = upperRightY - (offsetY + (fontSize * urlLineNumber)) + 5
-        position.upperRightX = (offsetX + textWidth)
-        position.upperRightY = upperRightY
-        annotation.rectangle = position
-
         val action = PDActionURI()
         action.uri = url
         annotation.action = action
@@ -186,7 +157,6 @@ class PublicationModel {
         publication.addPage(newPage)
 
         logger.info("New page construction completed.")
-
         logger.info("Saving URL to metadata.")
 
         publication.documentInformation.setCustomMetadataValue("BaseUrl", url)
