@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4b77f555-dc09-4ec8-9d73-205952cfef9e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/it/uniud/readersourcing2/publications/PublicationModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/it/uniud/readersourcing2/publications/PublicationModel.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,11 +19,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/it/uniud/readersourcing2/program/Program.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2310">
-              <caret line="121" selection-start-line="121" selection-end-line="121" />
-              <folding>
-                <element signature="e#42#545#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="2499">
+              <caret line="130" selection-start-line="130" selection-end-line="130" />
             </state>
           </provider>
         </entry>
@@ -45,11 +40,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/it/uniud/readersourcing2/publications/PublicationModel.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="149" column="34" lean-forward="true" selection-start-line="149" selection-start-column="34" selection-end-line="149" selection-end-column="34" />
-              <folding>
-                <element signature="e#47#919#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="773">
+              <caret line="167" selection-start-line="167" selection-end-line="167" />
             </state>
           </provider>
         </entry>
@@ -66,7 +58,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1239">
+            <state relative-caret-position="1302">
               <caret line="62" column="66" selection-start-line="62" selection-start-column="66" selection-end-line="62" selection-end-column="66" />
             </state>
           </provider>
@@ -110,7 +102,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -122,6 +113,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -135,7 +127,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -459,12 +451,14 @@
       <workItem from="1563266166637" duration="2075000" />
       <workItem from="1563278047723" duration="9545000" />
       <workItem from="1563352481623" duration="3622000" />
-      <workItem from="1563364715661" duration="6062000" />
+      <workItem from="1563364715661" duration="6114000" />
+      <workItem from="1563524621728" duration="811000" />
+      <workItem from="1563800270794" duration="8000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27428000" />
+    <option name="totallyTimeSpent" value="28299000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -475,12 +469,12 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
-      <window_info id="Structure" order="5" sideWeight="0.4520548" side_tool="true" visible="true" weight="0.17004265" />
+      <window_info id="Structure" order="5" sideWeight="0.45403588" side_tool="true" visible="true" weight="0.17324094" />
       <window_info id="Favorites" order="6" sideWeight="0.4053452" side_tool="true" weight="0.20010729" />
-      <window_info active="true" content_ui="combo" id="Project" order="7" sideWeight="0.5479452" visible="true" weight="0.17004265" />
+      <window_info active="true" content_ui="combo" id="Project" order="7" sideWeight="0.5459641" visible="true" weight="0.17324094" />
       <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.3544776" weight="0.17903416" />
       <window_info anchor="bottom" id="Messages" order="1" sideWeight="0.46723953" weight="0.2932862" />
-      <window_info anchor="bottom" x="-1920" y="23" width="1920" height="1017" id="Run" order="2" sideWeight="0.4099147" type="WINDOWED" visible="true" weight="0.2648402" />
+      <window_info anchor="bottom" x="-1920" y="23" width="1920" height="1017" id="Run" order="2" sideWeight="0.4099147" type="WINDOWED" weight="0.2648402" />
       <window_info anchor="bottom" id="TODO" order="3" sideWeight="0.4936034" weight="0.18278302" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" sideWeight="0.48933902" weight="0.32534248" />
@@ -503,7 +497,7 @@
       <window_info anchor="right" id="Remote Host" order="9" weight="0.1673774" />
       <window_info anchor="right" id="Database" order="10" sideWeight="0.5005574" side_tool="true" weight="0.15245202" />
       <window_info anchor="right" id="Ant Build" order="11" weight="0.24919441" />
-      <window_info anchor="right" id="Maven" order="12" visible="true" weight="0.15191898" />
+      <window_info anchor="right" id="Maven" order="12" visible="true" weight="0.15138593" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -556,11 +550,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/it/uniud/readersourcing2/program/Program.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2310">
-          <caret line="121" selection-start-line="121" selection-end-line="121" />
-          <folding>
-            <element signature="e#42#545#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="2499">
+          <caret line="130" selection-start-line="130" selection-end-line="130" />
         </state>
       </provider>
     </entry>
@@ -574,13 +565,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1239">
-          <caret line="62" column="66" selection-start-line="62" selection-start-column="66" selection-end-line="62" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/kotlin/it/uniud/readersourcing2/program/ProgramTest.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -588,13 +572,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1302">
+          <caret line="62" column="66" selection-start-line="62" selection-start-column="66" selection-end-line="62" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/it/uniud/readersourcing2/publications/PublicationModel.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="149" column="34" lean-forward="true" selection-start-line="149" selection-start-column="34" selection-end-line="149" selection-end-column="34" />
-          <folding>
-            <element signature="e#47#919#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="773">
+          <caret line="167" selection-start-line="167" selection-end-line="167" />
         </state>
       </provider>
     </entry>
