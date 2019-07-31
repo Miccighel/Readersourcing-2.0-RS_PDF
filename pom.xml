@@ -6,7 +6,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>it.uniud.readersourcing2</groupId>
     <artifactId>RS_PDF</artifactId>
-    <version>v1.0.6-alpha</version>
+    <version>v1.0.7-alpha</version>
 
     <organization>
         <name>SISSA Medialab</name>
@@ -46,7 +46,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.main.class>it.uniud.readersourcing2.program.Program</project.main.class>
-        <project.fat.jar.name>RS_PDF-v1.0.6-alpha-jar-with-dependencies.jar</project.fat.jar.name>
+        <project.fat.jar.name>RS_PDF-v1.0.7-alpha-shaded.jar</project.fat.jar.name>
         <local.server.output.dir>E:\Dropbox\Universita\Assegno\Progetti\Readersourcing-2.0\Sorgenti\RS_Server\lib\</local.server.output.dir>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
@@ -57,13 +57,14 @@
         <kotlin.maven.plugin.version>1.3.41</kotlin.maven.plugin.version>
         <kotlin.compiler.incremental>true</kotlin.compiler.incremental>
         <junit.platform.version>1.3.2</junit.platform.version>
-        <junit.jupiter.version>5.5.0</junit.jupiter.version>
+        <junit.jupiter.version>5.5.1</junit.jupiter.version>
         <dokka.version>0.9.16</dokka.version>
         <maven.dependency-plugin.version>3.1.1</maven.dependency-plugin.version>
         <maven.jar-plugin.version>3.1.0</maven.jar-plugin.version>
         <maven.surefire-plugin.version>2.22.0</maven.surefire-plugin.version>
         <maven.resource-plugin.version>3.1.0</maven.resource-plugin.version>
         <maven.clean-plugin.version>3.1.0</maven.clean-plugin.version>
+        <maven.shade-plugin.version>3.2.1</maven.shade-plugin.version>
         <log4j.api.version>2.12.0</log4j.api.version>
         <log4j.core.version>2.12.0</log4j.core.version>
         <apache.pdfbox.version>2.0.16</apache.pdfbox.version>
@@ -171,23 +172,6 @@
         <plugins>
 
             <plugin>
-                <artifactId>maven-clean-plugin</artifactId>
-                <version>${maven.clean-plugin.version}</version>
-                <configuration>
-                    <filesets>
-                        <fileset>
-                            <directory>log/</directory>
-                            <followSymlinks>false</followSymlinks>
-                        </fileset>
-                        <fileset>
-                            <directory>res/</directory>
-                            <followSymlinks>false</followSymlinks>
-                        </fileset>
-                    </filesets>
-                </configuration>
-            </plugin>
-
-            <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>exec-maven-plugin</artifactId>
                 <executions>
@@ -274,11 +258,8 @@
                             <mainClass>${project.main.class}</mainClass>
                         </manifest>
                     </archive>
-                    <descriptorRefs>
-                        <descriptorRef>jar-with-dependencies</descriptorRef>
-                    </descriptorRefs>
                     <descriptors>
-                        <descriptor>src/main/assembly/test-jar-with-dependencies.xml</descriptor>
+                        <descriptor>src/main/assembly/tests-fat.xml</descriptor>
                     </descriptors>
                 </configuration>
                 <executions>
@@ -314,6 +295,57 @@
             </plugin>
 
             <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-shade-plugin</artifactId>
+                <version>${maven.shade-plugin.version}</version>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>shade</goal>
+                        </goals>
+                        <configuration>
+                            <shadedArtifactAttached>true</shadedArtifactAttached>
+                            <shadedClassifierName>shaded</shadedClassifierName> <!-- Any name that makes sense -->
+                            <transformers>
+                                <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                                    <mainClass>${project.main.class}</mainClass>
+                                    <manifestEntries>
+                                        <Multi-Release>true</Multi-Release>
+                                    </manifestEntries>
+                                </transformer>
+                                <transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
+                            </transformers>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>${maven.resource-plugin.version}</version>
+                <executions>
+                    <execution>
+                        <id>copy-files-on-build</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>copy-resources</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>${local.server.output.dir}</outputDirectory>
+                            <resources>
+                                <resource>
+                                    <directory>${project.build.directory}</directory>
+                                    <include>${project.fat.jar.name}</include>
+                                    <filtering>false</filtering>
+                                </resource>
+                            </resources>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>${maven.surefire-plugin.version}</version>
                 <dependencies>
@@ -344,27 +376,20 @@
             </plugin>
 
             <plugin>
-                <artifactId>maven-resources-plugin</artifactId>
-                <version>${maven.resource-plugin.version}</version>
-                <executions>
-                    <execution>
-                        <id>copy-files-on-build</id>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>copy-resources</goal>
-                        </goals>
-                        <configuration>
-                            <outputDirectory>${local.server.output.dir}</outputDirectory>
-                            <resources>
-                                <resource>
-                                    <directory>${project.build.directory}</directory>
-                                    <include>${project.fat.jar.name}</include>
-                                    <filtering>false</filtering>
-                                </resource>
-                            </resources>
-                        </configuration>
-                    </execution>
-                </executions>
+                <artifactId>maven-clean-plugin</artifactId>
+                <version>${maven.clean-plugin.version}</version>
+                <configuration>
+                    <filesets>
+                        <fileset>
+                            <directory>log/</directory>
+                            <followSymlinks>false</followSymlinks>
+                        </fileset>
+                        <fileset>
+                            <directory>res/</directory>
+                            <followSymlinks>false</followSymlinks>
+                        </fileset>
+                    </filesets>
+                </configuration>
             </plugin>
 
         </plugins>

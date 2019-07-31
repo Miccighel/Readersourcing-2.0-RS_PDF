@@ -133,7 +133,7 @@ class PublicationModel {
         val textWidth = (font.getStringWidth(caption) / 100) - 11
         contentStream.moveTo(offsetX, upperRightY - (offsetY + (fontSize * urlLineNumber) - 10))
         contentStream.lineTo(offsetX + textWidth, upperRightY - (offsetY + (fontSize * urlLineNumber) - 10))
-        contentStream.stroke();
+        contentStream.stroke()
 
         buildQRCode(url)?.let {
             logger.info("Adding QR Code.")
@@ -147,6 +147,17 @@ class PublicationModel {
         logger.info("Adding Hyperlink.")
 
         val annotation = PDAnnotationLink()
+        val underline = PDBorderStyleDictionary()
+        underline.style = PDBorderStyleDictionary.STYLE_UNDERLINE
+        annotation.borderStyle = underline
+
+        val position = PDRectangle()
+        position.lowerLeftX = offsetX
+        position.upperRightX = (offsetX + textWidth)
+        position.lowerLeftY = upperRightY - (offsetY + (fontSize * (urlLineNumber - 1)))
+        position.upperRightY = upperRightY - (offsetY + (fontSize + 20))
+        annotation.rectangle = position
+
         val action = PDActionURI()
         action.uri = url
         annotation.action = action
