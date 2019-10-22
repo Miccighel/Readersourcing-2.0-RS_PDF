@@ -6,7 +6,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>it.uniud.readersourcing2</groupId>
     <artifactId>RS_PDF</artifactId>
-    <version>v1.0.7-alpha</version>
+    <version>v1.0.6-alpha</version>
 
     <organization>
         <name>SISSA Medialab</name>
@@ -46,15 +46,15 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.main.class>it.uniud.readersourcing2.program.Program</project.main.class>
-        <project.fat.jar.name>RS_PDF-v1.0.7-alpha-shaded.jar</project.fat.jar.name>
-        <local.server.output.dir>E:\Dropbox\Universita\Assegno\Progetti\Readersourcing-2.0\Sorgenti\RS_Server\lib\</local.server.output.dir>
+        <project.fat.jar.name>RS_PDF-v1.0.6-alpha-shaded.jar</project.fat.jar.name>
+        <local.server.output.dir>E:\Dropbox\Universita\Ricerca\Progetti\Readersourcing-2.0\Sorgenti\RS_Server\lib\</local.server.output.dir>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <kotlin.version>1.3.41</kotlin.version>
-        <kotlin.stdlib.version>1.3.41</kotlin.stdlib.version>
-        <kotlin.test.version>1.3.41</kotlin.test.version>
-        <kotlin.reflect.version>1.3.41</kotlin.reflect.version>
-        <kotlin.maven.plugin.version>1.3.41</kotlin.maven.plugin.version>
+        <kotlin.version>1.3.50</kotlin.version>
+        <kotlin.stdlib.version>1.3.50</kotlin.stdlib.version>
+        <kotlin.test.version>1.3.50</kotlin.test.version>
+        <kotlin.reflect.version>1.3.50</kotlin.reflect.version>
+        <kotlin.maven.plugin.version>1.3.50</kotlin.maven.plugin.version>
         <kotlin.compiler.incremental>true</kotlin.compiler.incremental>
         <junit.platform.version>1.3.2</junit.platform.version>
         <junit.jupiter.version>5.5.1</junit.jupiter.version>
@@ -65,12 +65,12 @@
         <maven.resource-plugin.version>3.1.0</maven.resource-plugin.version>
         <maven.clean-plugin.version>3.1.0</maven.clean-plugin.version>
         <maven.shade-plugin.version>3.2.1</maven.shade-plugin.version>
-        <log4j.api.version>2.12.0</log4j.api.version>
-        <log4j.core.version>2.12.0</log4j.core.version>
-        <apache.pdfbox.version>2.0.16</apache.pdfbox.version>
+        <log4j.api.version>2.12.1</log4j.api.version>
+        <log4j.core.version>2.12.1</log4j.core.version>
+        <apache.pdfbox.version>2.0.17</apache.pdfbox.version>
         <apache.commons.cli>1.4</apache.commons.cli>
         <apache.commons.validators>1.6</apache.commons.validators>
-        <apache.httpclient.version>4.5.9</apache.httpclient.version>
+        <apache.httpclient.version>4.5.10</apache.httpclient.version>
         <com.google.zxing>3.4.0</com.google.zxing>
     </properties>
 
@@ -188,10 +188,10 @@
                     <arguments>
                         <argument>-pIn</argument>
                         <!--suppress UnresolvedMavenProperty -->
-                        <argument>E:\Dropbox\Universita\Assegno\Progetti\Readersourcing-2.0\Sorgenti\RS_PDF\data\Reader.pdf</argument>
+                        <argument>E:\Dropbox\Universita\Ricerca\Progetti\Readersourcing-2.0\Sorgenti\RS_PDF\data\Reader.pdf</argument>
                         <argument>-pOut</argument>
                         <!--suppress UnresolvedMavenProperty -->
-                        <argument>E:\Dropbox\Universita\Assegno\Progetti\Readersourcing-2.0\Sorgenti\RS_PDF\res\</argument>
+                        <argument>E:\Dropbox\Universita\Ricerca\Progetti\Readersourcing-2.0\Sorgenti\RS_PDF\res\</argument>
                         <argument>-c</argument>
                         <argument>Link per la pagina di voto</argument>
                         <argument>-u</argument>

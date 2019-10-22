@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4b77f555-dc09-4ec8-9d73-205952cfef9e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,7 +34,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.language.Kotlin" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
@@ -53,7 +54,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Maven.Build + Pack">
+  <component name="RunManager" selected="JAR Application.Run (Default Path)">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -90,16 +91,16 @@
       </method>
     </configuration>
     <configuration name="Run (Custom Path)" type="JarApplication">
-      <option name="JAR_PATH" value="$PROJECT_DIR$/target/RS_PDF-v1.0.7-alpha-shaded.jar" />
+      <option name="JAR_PATH" value="$PROJECT_DIR$/target/RS_PDF-v1.0.6-alpha-shaded.jar" />
       <option name="PROGRAM_PARAMETERS" value=" -c &quot;This is a caption&quot; -u &quot;www.google.it&quot; -pIn E:\Dropbox\Universita\Assegno\Progetti\Readersourcing-2.0\Sorgenti\RS_PDF\data\Reader.pdf -pOut E:\Dropbox\Universita\Assegno\Progetti\Readersourcing-2.0\Sorgenti\RS_PDF\res\" />
-      <option name="WORKING_DIRECTORY" value="E:\Dropbox\Universita\Assegno\Progetti\Readersourcing-2.0\Sorgenti\RS_PDF" />
+      <option name="WORKING_DIRECTORY" value="E:\Dropbox\Universita\Ricerca\Progetti\Readersourcing-2.0\Sorgenti\RS_PDF" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2" />
     </configuration>
     <configuration name="Run (Default Path)" type="JarApplication">
-      <option name="JAR_PATH" value="$PROJECT_DIR$/target/RS_PDF-v1.0.7-alpha-shaded.jar" />
+      <option name="JAR_PATH" value="$PROJECT_DIR$/target/RS_PDF-v1.0.6-alpha-shaded.jar" />
       <option name="PROGRAM_PARAMETERS" value="-c &quot;This is a caption&quot; -u &quot;www.google.it&quot;" />
-      <option name="WORKING_DIRECTORY" value="E:\Dropbox\Universita\Assegno\Progetti\Readersourcing-2.0\Sorgenti\RS_PDF" />
+      <option name="WORKING_DIRECTORY" value="E:\Dropbox\Universita\Ricerca\Progetti\Readersourcing-2.0\Sorgenti\RS_PDF" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2" />
     </configuration>
@@ -259,6 +260,32 @@
       </MavenSettings>
       <method v="2" />
     </configuration>
+    <configuration name="Check Updates" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="mvn" />
+                <option value="versions:display-dependency-updates" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
     <configuration name="Clean" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -332,6 +359,7 @@
       <item itemvalue="JAR Application.Run (Custom Path)" />
       <item itemvalue="JAR Application.Run (Default Path)" />
       <item itemvalue="JUnit.Test" />
+      <item itemvalue="Maven.Check Updates" />
       <item itemvalue="Maven.Run" />
       <item itemvalue="Maven.Build" />
       <item itemvalue="Maven.Build + Run" />
@@ -377,6 +405,9 @@
       <workItem from="1566808059827" duration="596000" />
       <workItem from="1571143397800" duration="18000" />
       <workItem from="1571143447493" duration="21000" />
+      <workItem from="1571745634914" duration="104000" />
+      <workItem from="1571748035495" duration="82000" />
+      <workItem from="1571748199962" duration="395000" />
     </task>
     <servers />
   </component>
