@@ -9,8 +9,5 @@
         <module name="RS_PDF" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="NewBestSub" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
 </project>
