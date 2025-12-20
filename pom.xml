@@ -50,7 +50,7 @@
         <maven.clean-plugin.version>3.3.1</maven.clean-plugin.version>
         <maven.shade-plugin.version>3.5.1</maven.shade-plugin.version>
         <log4j.api.version>2.20.0</log4j.api.version>
-        <log4j.core.version>2.20.0</log4j.core.version>
+        <log4j.core.version>2.25.3</log4j.core.version>
         <apache.pdfbox.version>2.0.24</apache.pdfbox.version>
         <apache.commons.cli>1.5.0</apache.commons.cli>
         <apache.commons.validators>1.7</apache.commons.validators>
