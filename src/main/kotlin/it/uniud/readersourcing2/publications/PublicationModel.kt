@@ -5,15 +5,18 @@ import com.google.zxing.client.j2se.MatrixToImageWriter
 import com.google.zxing.qrcode.QRCodeWriter
 import it.uniud.readersourcing2.utils.Constants
 import org.apache.logging.log4j.LogManager
+import org.apache.pdfbox.Loader
 import org.apache.pdfbox.pdmodel.PDDocument
 import org.apache.pdfbox.pdmodel.PDPage
 import org.apache.pdfbox.pdmodel.PDPageContentStream
 import org.apache.pdfbox.pdmodel.common.PDRectangle
 import org.apache.pdfbox.pdmodel.font.PDType1Font
+import org.apache.pdfbox.pdmodel.font.Standard14Fonts
 import org.apache.pdfbox.pdmodel.graphics.image.PDImageXObject
 import org.apache.pdfbox.pdmodel.interactive.action.PDActionURI
 import org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotationLink
 import org.apache.pdfbox.pdmodel.interactive.annotation.PDBorderStyleDictionary
+import org.apache.pdfbox.pdfwriter.compress.CompressParameters
 import java.io.File
 import java.nio.file.Files
 import java.nio.file.Paths
@@ -50,13 +53,13 @@ class PublicationModel {
 
     fun loadData(publication: File, outputPath: String) {
         updateData(publication)
-        this.outputPath = "$outputPath$name-Link.pdf"
-        this.qrCodePath = "$outputPath$name-QRCode.png"
+        this.outputPath = Paths.get(outputPath, "$name-Link.pdf").toString()
+        this.qrCodePath = Paths.get(outputPath, "$name-QRCode.png").toString()
         publicationDataToString()
     }
 
     private fun updateData(publication: File) {
-        this.publication = PDDocument.load(publication)
+        this.publication = Loader.loadPDF(publication)
         val lastPage = this.publication.documentCatalog.pages.last()
         this.pageWidth = lastPage.mediaBox.width
         this.pageHeight = lastPage.mediaBox.height
@@ -107,7 +110,7 @@ class PublicationModel {
         val newPage = PDPage(PDRectangle(pageWidth, pageHeight))
         val contentStream = PDPageContentStream(publication, newPage, PDPageContentStream.AppendMode.APPEND, false)
 
-        val font = PDType1Font.HELVETICA
+        val font = PDType1Font(Standard14Fonts.FontName.HELVETICA)
         val upperRightY = newPage.mediaBox.upperRightY
         val offsetX = 55F
         val offsetY = 40F
@@ -174,7 +177,7 @@ class PublicationModel {
 
         logger.info("URL added to metadata successfully.")
 
-        publication.save(outputPath)
+        publication.save(outputPath, CompressParameters.NO_COMPRESSION)
         publication.close()
 
         logger.info("Updated file path:")

@@ -34,34 +34,39 @@ It is characterized by a command-line interface, allowing RS_Server to use it di
 
 <h1>Installation</h1>
 
-RS_PDF comes bundled with RS_Server, eliminating the need for manual installation when deploying the latter. However, if you wish to use RS_PDF 
-independently, you can simply download the attached `.jar` files from the release section of this repository and place them anywhere on your filesystem.
+RS_PDF can be bundled with a compatible RS_Server distribution, eliminating the need for manual installation when deploying the latter. However, if you wish to use RS_PDF
+independently, you can download the shaded `.jar` file from the release section of this repository and place it anywhere on your filesystem.
+
+To build and verify RS_PDF from source, run `./mvnw clean verify` (`mvnw.cmd clean verify` on Windows). The Maven Wrapper downloads the configured Maven version when necessary.
+The executable file is generated at `target/RS_PDF-v2.0.0-shaded.jar`.
 
 <h1>Requirements</h1>
 
-- <a href="https://www.oracle.com/it/java/technologies/javase/jdk11-archive-downloads.html">JDK (Java Development Kit)</a> == 11.0.19;
+- <a href="https://www.oracle.com/java/technologies/downloads/#java21">JDK (Java Development Kit)</a> >= 21.
 
 <h1>Command Line Interface (CLI)</h1>
 
 The behavior of RS_PDF is configured during its startup phase by RS_Server through a set of special command-line options. For this reason,
 it is useful to provide a list of all the options that can be used if it is necessary to employ RS_PDF in other contexts, modify its implementation,
-or for any other reason. However, it is designed to work with a default configuration if no options are provided. The list of command-line options
+or for any other reason. Input and output paths use their default configuration when both options are omitted, while caption and URL are always required. The list of command-line options
 is shown in the following table:
 
 | Short | Long | Description | Values | Required | Depends On |
 |-------|------|-------------|--------|----------|------------|
-| `--pIn` | `--pathIn` | Path on the filesystem from which to load the PDF files to be edited. It can be a file or a folder. | String representing a relative path. | No | `--pOut` |
-| `--pOut` | `--pathOut` | Path on the filesystem in which to save the edited PDF files. It must be a folder. | String representing a relative path. | No | `--pIn` |
-| `--c` | `--caption` | Caption of the link to add. | Any string. | Yes | No |
-| `--u` | `--url` | URL to add. | A valid URL. | Yes | No |
-| `--a` | `--authToken` | Authentication token received from RS_Server. | A valid authentication token received from RS_Server. | No | `--pOut --pIn --pId` |
-| `--pId` | `--publicationId` | Identifier for a publication present on RS_Server. | A valid publication identifier received from RS_Server. | No | `--pOut --pIn --a` |
+| `-pIn` | `--pathIn` | Path on the filesystem from which to load the PDF files to be edited. It can be a file or a folder. | String representing a relative or absolute path. | No | `-pOut` |
+| `-pOut` | `--pathOut` | Path on the filesystem in which to save the edited PDF files. It must be a folder. | String representing a relative or absolute path. | No | `-pIn` |
+| `-c` | `--caption` | Caption of the link to add. | Any string. | Yes | No |
+| `-u` | `--url` | URL to add. | A valid URL. | Yes | No |
+| `-a` | `--authToken` | Authentication token received from RS_Server. | A valid authentication token received from RS_Server. | No | `-pOut -pIn -pId` |
+| `-pId` | `--publicationId` | Identifier for a publication present on RS_Server. | A valid publication identifier received from RS_Server. | No | `-pOut -pIn -a` |
 
 To provide an execution example, let's assume a scenario where there is a need to edit some files encoded in PDF format with the following prerequisites:
 
 - There is a folder containing `n` files to edit at the path `C:\data`.
 - The edited files must be saved inside a folder at the path `C:\out`.
-- The file in JAR format containing the library is called `RS_PDF-v1.0-alpha.jar`.
+- The file in JAR format containing the library is called `RS_PDF-v2.0.0-shaded.jar`.
 - The JAR file containing RS_PDF is located inside the folder at the path `C:\lib`.
 
-The execution of RS_PDF is initiated with the command: `java -jar C:\lib\RS_PDF-v1.0-alpha.jar -pIn C:\data -pOut C:\out`.
+The execution of RS_PDF is initiated with the command:
+
+`java -jar C:\lib\RS_PDF-v2.0.0-shaded.jar -pIn C:\data -pOut C:\out -c "Express your rating" -u "https://readersourcing.example/rate"`.

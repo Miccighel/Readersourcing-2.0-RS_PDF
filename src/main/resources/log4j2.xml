@@ -5,26 +5,12 @@
     </Properties>
     <Appenders>
         <Console name="Console-Main" target="SYSTEM_OUT">
-            <PatternLayout>
-                <ScriptPatternSelector>
-                    <Script name="LevelSelector" language="javascript"><![CDATA[logEvent.getLevel();]]></Script>
-                    <PatternMatch key="INFO"
-                                  pattern="%style{%-5.5p}{FG_Cyan} [%d{HH:mm:ss} %-8.8t %-21.-21C{1} %-23M] %style{%m%n}{FG_Cyan,Bright}"/>
-                    <PatternMatch key="DEBUG"
-                                  pattern="%style{%-5.5p}{FG_Yellow} [%d{HH:mm:ss} %-8.8t %-21.-21C{1} %-23M] %style{%m%n}{FG_Yellow,Bright}"/>
-                </ScriptPatternSelector>
-            </PatternLayout>
+            <PatternLayout
+                    pattern="%highlight{%-5.5p}{INFO=cyan, DEBUG=yellow} [%d{HH:mm:ss} %-8.8t %-21.-21C{1} %-23M] %m%n"/>
         </Console>
         <Console name="Console-Program" target="SYSTEM_OUT">
-            <PatternLayout>
-                <ScriptPatternSelector>
-                    <Script name="LevelSelector" language="javascript"><![CDATA[logEvent.getLevel();]]></Script>
-                    <PatternMatch key="INFO"
-                                  pattern="%style{%-5.5p}{FG_Cyan} [%d{HH:mm:ss} %-8.8t %-21.-21C{1} %-23M] %style{%m%n}{BG_Cyan,Bright}"/>
-                    <PatternMatch key="ERROR"
-                                  pattern="%style{%highlight{%-5.5p}}{Bright} [%d{HH:mm:ss} %-8.8t %-21.-21C{1} %-23M] %style{%m%n}{BG_Red,Bright}"/>
-                </ScriptPatternSelector>
-            </PatternLayout>
+            <PatternLayout
+                    pattern="%highlight{%-5.5p}{INFO=cyan, ERROR=bright red} [%d{HH:mm:ss} %-8.8t %-21.-21C{1} %-23M] %m%n"/>
         </Console>
         <RollingFile name="Rolling" fileName="${baseLogFileName}" filePattern="${baseLogFileName}-%i.log"
                      append="false">

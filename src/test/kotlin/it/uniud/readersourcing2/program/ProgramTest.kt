@@ -4,6 +4,7 @@ import com.google.zxing.BinaryBitmap
 import com.google.zxing.MultiFormatReader
 import com.google.zxing.client.j2se.BufferedImageLuminanceSource
 import com.google.zxing.common.HybridBinarizer
+import org.apache.pdfbox.Loader
 import org.apache.pdfbox.pdmodel.PDDocument
 import org.apache.pdfbox.pdmodel.graphics.image.PDImageXObject
 import org.apache.pdfbox.pdmodel.interactive.action.PDActionURI
@@ -11,7 +12,6 @@ import org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotationLink
 import org.junit.jupiter.api.DisplayName
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.io.TempDir
-import java.io.File
 import java.nio.file.Files
 import java.nio.file.Path
 import java.security.MessageDigest
@@ -35,7 +35,7 @@ class ProgramTest {
         val inputChecksum = sha256(input)
         val outputDirectory = temporaryDirectory.resolve("output")
         Files.createDirectory(outputDirectory)
-        val outputPath = outputDirectory.toString() + File.separator
+        val outputPath = outputDirectory.toString()
         val caption = "Express your rating"
         val url = "https://example.test/rate/42/token"
 
@@ -55,9 +55,10 @@ class ProgramTest {
         assertEquals(inputChecksum, sha256(input), "The input PDF must remain unchanged")
         assertFalse(Files.exists(outputDirectory.resolve("Reader-QRCode.png")))
 
-        PDDocument.load(input.toFile()).use { sourceDocument ->
-            PDDocument.load(output.toFile()).use { outputDocument ->
+        Loader.loadPDF(input.toFile()).use { sourceDocument ->
+            Loader.loadPDF(output.toFile()).use { outputDocument ->
                 assertEquals(sourceDocument.numberOfPages + 1, outputDocument.numberOfPages)
+                assertEquals(sourceDocument.version, outputDocument.version)
 
                 val sourceLastPage = sourceDocument.getPage(sourceDocument.numberOfPages - 1)
                 val appendedPage = outputDocument.getPage(outputDocument.numberOfPages - 1)
