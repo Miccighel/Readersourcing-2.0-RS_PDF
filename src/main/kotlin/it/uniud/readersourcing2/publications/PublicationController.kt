@@ -67,8 +67,10 @@ class PublicationController {
             }
         } catch (exception: FileNotFoundException) {
             logger.warn("Data set not found. Is file/folder inside a \"data\" dir.? If you've specified a custom input path, please check it.")
+            throw exception
         } catch (exception: IOException) {
-            logger.warn(exception.message as String)
+            logger.warn(exception.message)
+            throw exception
         }
 
         logger.info("Data set loading for input path \"${this.inputPath}\" completed.")

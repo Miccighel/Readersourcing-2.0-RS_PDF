@@ -12,12 +12,18 @@ import org.apache.logging.log4j.Logger
 import java.io.File
 import java.io.FileNotFoundException
 import java.io.IOException
+import java.net.URI
+import kotlin.system.exitProcess
 
 object Program {
 
     @JvmStatic
     fun main(arguments: Array<String>) {
+        val status = execute(arguments)
+        if (status != 0) exitProcess(status)
+    }
 
+    internal fun execute(arguments: Array<String>): Int {
         val commandLine: CommandLine
         val parser: CommandLineParser
         val options = loadCommandLineOptions()
@@ -78,7 +84,10 @@ object Program {
             }
 
             url = commandLine.getOptionValue("u")
-            logger.info("URL found: $url")
+            if (!isValidHttpUrl(url)) {
+                throw ParseException("Value for the option <<u>> or <<url>> must be a valid HTTP or HTTPS URL. Check the usage section below.")
+            }
+            logger.info("URL found and validated.")
 
             caption = commandLine.getOptionValue("c")
             logger.info("Caption found: $caption")
@@ -110,7 +119,7 @@ object Program {
             }
 
             if (commandLine.hasOption("a")) {
-                logger.info("Authentication token found: $authenticationToken")
+                logger.info("Authentication token found.")
             }
             if (commandLine.hasOption("pId")) {
                 logger.info("Publication identifier found: $publicationIdentifier")
@@ -121,21 +130,25 @@ object Program {
             publicationController.addUrl(Parameters(caption, url, authenticationToken, publicationIdentifier))
 
             logger.info("${Constants.PROGRAM_NAME} execution terminated.")
+            return 0
 
         } catch (exception: FileNotFoundException) {
 
             logger.error(exception.message)
             logger.info("${Constants.PROGRAM_NAME} execution terminated.")
+            return 1
 
         } catch (exception: IOException) {
 
             logger.error(exception.message)
             logger.info("${Constants.PROGRAM_NAME} execution terminated.")
+            return 1
 
         } catch (exception: WriterException) {
 
             logger.error(exception.message)
             logger.info("${Constants.PROGRAM_NAME} execution terminated.")
+            return 1
 
         } catch (exception: ParseException) {
 
@@ -144,9 +157,19 @@ object Program {
             formatter.printHelp(Constants.PROGRAM_NAME, null, options, null, true)
             logger.error("End of the usage section.")
             logger.info("${Constants.PROGRAM_NAME} execution terminated.")
+            return 2
 
         }
 
+    }
+
+    private fun isValidHttpUrl(value: String): Boolean {
+        return runCatching {
+            val uri = URI(value)
+            (uri.scheme == "http" || uri.scheme == "https") &&
+                    !uri.host.isNullOrBlank() &&
+                    uri.userInfo == null
+        }.getOrDefault(false)
     }
 
     private fun loadCommandLineOptions(): Options {

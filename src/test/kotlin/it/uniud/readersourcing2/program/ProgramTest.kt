@@ -17,6 +17,7 @@ import java.nio.file.Path
 import java.security.MessageDigest
 import kotlin.test.assertEquals
 import kotlin.test.assertFalse
+import kotlin.test.assertNotEquals
 import kotlin.test.assertTrue
 
 class ProgramTest {
@@ -88,6 +89,33 @@ class ProgramTest {
         }
 
         println("[ProgramTest main] - Test ends.")
+    }
+
+    @Test
+    @DisplayName("The CLI returns an error for missing required arguments")
+    fun testMissingArguments() {
+        assertNotEquals(0, Program.execute(emptyArray()))
+    }
+
+    @Test
+    @DisplayName("The CLI accepts only HTTP and HTTPS rating URLs")
+    fun testInvalidUrl() {
+        val input = temporaryDirectory.resolve("Reader.pdf")
+        Files.copy(Path.of("data", "Reader.pdf"), input)
+        val outputDirectory = temporaryDirectory.resolve("invalid-url-output")
+        Files.createDirectory(outputDirectory)
+
+        val status = Program.execute(
+            arrayOf(
+                "-pIn", input.toString(),
+                "-pOut", outputDirectory.toString(),
+                "-c", "Express your rating",
+                "-u", "file:///tmp/rate"
+            )
+        )
+
+        assertNotEquals(0, status)
+        assertFalse(Files.exists(outputDirectory.resolve("Reader-Link.pdf")))
     }
 
     private fun sha256(path: Path): String {

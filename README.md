@@ -56,7 +56,7 @@ is shown in the following table:
 | `-pIn` | `--pathIn` | Path on the filesystem from which to load the PDF files to be edited. It can be a file or a folder. | String representing a relative or absolute path. | No | `-pOut` |
 | `-pOut` | `--pathOut` | Path on the filesystem in which to save the edited PDF files. It must be a folder. | String representing a relative or absolute path. | No | `-pIn` |
 | `-c` | `--caption` | Caption of the link to add. | Any string. | Yes | No |
-| `-u` | `--url` | URL to add. | A valid URL. | Yes | No |
+| `-u` | `--url` | URL to add. | A valid HTTP or HTTPS URL without embedded credentials. | Yes | No |
 | `-a` | `--authToken` | Authentication token received from RS_Server. | A valid authentication token received from RS_Server. | No | `-pOut -pIn -pId` |
 | `-pId` | `--publicationId` | Identifier for a publication present on RS_Server. | A valid publication identifier received from RS_Server. | No | `-pOut -pIn -a` |
 
@@ -70,3 +70,7 @@ To provide an execution example, let's assume a scenario where there is a need t
 The execution of RS_PDF is initiated with the command:
 
 `java -jar C:\lib\RS_PDF-v2.0.0-shaded.jar -pIn C:\data -pOut C:\out -c "Express your rating" -u "https://readersourcing.example/rate"`.
+
+RS_PDF returns a non-zero process exit code when its parameters are invalid or
+when a publication cannot be read or written. Authentication tokens and full
+rating URLs are deliberately omitted from operational logs.

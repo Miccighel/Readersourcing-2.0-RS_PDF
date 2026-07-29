@@ -100,10 +100,10 @@ class PublicationModel {
         publicationIdentifier = parameters.publicationIdentifier
 
         logger.info("Adding URL with caption to \"$name.pdf\"")
-        logger.info("Base URL: $url")
+        logger.info("Base URL received.")
         logger.info("Caption: $caption")
         publicationIdentifier?.let { logger.info("Publication Identifier: $it") }
-        authenticationToken?.let { logger.info("Authentication Token: $it") }
+        authenticationToken?.let { logger.info("Authentication Token received.") }
 
         logger.info("New page construction started.")
 
