@@ -30,7 +30,7 @@ This is the official repository of **RS_PDF**, which is part of the **Readersour
 **RS_PDF** is the software library utilized by [RS_Server](https://github.com/Miccighel/Readersourcing-2.0-RS_Server) to edit the PDF files and add
 the required URL when a reader requests to save a publication for later reading. 
 
-It is characterized by a command-line interface, allowing RS_Server to use it directly. Since they are deployed together, they can communicate without the need for complex channels and paradigms.
+It is characterized by a command line interface, allowing RS_Server to use it directly. Since they are deployed together, they can communicate without the need for complex channels and paradigms.
 
 <h1>Installation</h1>
 
@@ -46,9 +46,9 @@ The executable file is generated at `target/RS_PDF-v2.0.0-shaded.jar`.
 
 <h1>Command Line Interface (CLI)</h1>
 
-The behavior of RS_PDF is configured during its startup phase by RS_Server through a set of special command-line options. For this reason,
+The behavior of RS_PDF is configured during its startup phase by RS_Server through a set of special command line options. For this reason,
 it is useful to provide a list of all the options that can be used if it is necessary to employ RS_PDF in other contexts, modify its implementation,
-or for any other reason. Input and output paths use their default configuration when both options are omitted, while caption and URL are always required. The list of command-line options
+or for any other reason. Input and output paths use their default configuration when both options are omitted, while caption and URL are always required. The list of command line options
 is shown in the following table:
 
 | Short | Long | Description | Values | Required | Depends On |
@@ -71,6 +71,6 @@ The execution of RS_PDF is initiated with the command:
 
 `java -jar C:\lib\RS_PDF-v2.0.0-shaded.jar -pIn C:\data -pOut C:\out -c "Express your rating" -u "https://readersourcing.example/rate"`.
 
-RS_PDF returns a non-zero process exit code when its parameters are invalid or
+RS_PDF returns a nonzero process exit code when its parameters are invalid or
 when a publication cannot be read or written. Authentication tokens and full
 rating URLs are deliberately omitted from operational logs.
