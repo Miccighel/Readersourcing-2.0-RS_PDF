@@ -18,7 +18,7 @@ This is the official repository of **RS_PDF**, which is part of the **Readersour
 
 <h1>Useful Links</h1>
 
-- <a href="https://readersourcing.org">Readersourcing 2.0 (Web Interface)</a>
+- <a href="https://readersourcing.com">Readersourcing 2.0 (Web Interface)</a>
 - <a href="https://github.com/Miccighel/Readersourcing-2.0">Readersourcing 2.0 (GitHub)</a>
 - <a href="https://zenodo.org/record/1446468">Original Article</a>
 - <a href="https://zenodo.org/record/1452397">Technical Documentation (Zenodo)</a>
@@ -27,8 +27,10 @@ This is the official repository of **RS_PDF**, which is part of the **Readersour
 
 <h1>Description</h1>
 
-**RS_PDF** is the software library utilized by [RS_Server](https://github.com/Miccighel/Readersourcing-2.0-RS_Server) to edit the PDF files and add
-the required URL when a reader requests to save a publication for later reading. 
+**RS_PDF** is the software component utilized by [RS_Server](https://github.com/Miccighel/Readersourcing-2.0-RS_Server)
+when a reader requests to save a publication for later reading. It creates an annotated copy of the PDF and appends a
+page containing the supplied caption, an underlined rating link, and a QR Code. The same URL is stored in the `BaseUrl`
+metadata field so that RS_Server can return it to RS_Rate when the annotated publication is uploaded.
 
 It is characterized by a command line interface, allowing RS_Server to use it directly. Since they are deployed together, they can communicate without the need for complex channels and paradigms.
 
@@ -48,7 +50,7 @@ The executable file is generated at `target/RS_PDF-v2.0.0-shaded.jar`.
 
 The behavior of RS_PDF is configured during its startup phase by RS_Server through a set of special command line options. For this reason,
 it is useful to provide a list of all the options that can be used if it is necessary to employ RS_PDF in other contexts, modify its implementation,
-or for any other reason. Input and output paths use their default configuration when both options are omitted, while caption and URL are always required. The list of command line options
+or for any other reason. When both path options are omitted, RS_PDF reads from the `data` folder and writes to the `res` folder in its working directory. Caption and URL are always required. The list of command line options
 is shown in the following table:
 
 | Short | Long | Description | Values | Required | Depends On |
@@ -57,8 +59,13 @@ is shown in the following table:
 | `-pOut` | `--pathOut` | Path on the filesystem in which to save the edited PDF files. It must be a folder. | String representing a relative or absolute path. | No | `-pIn` |
 | `-c` | `--caption` | Caption of the link to add. | Any string. | Yes | No |
 | `-u` | `--url` | URL to add. | A valid HTTP or HTTPS URL without embedded credentials. | Yes | No |
-| `-a` | `--authToken` | Authentication token received from RS_Server. | A valid authentication token received from RS_Server. | No | `-pOut -pIn -pId` |
-| `-pId` | `--publicationId` | Identifier for a publication present on RS_Server. | A valid publication identifier received from RS_Server. | No | `-pOut -pIn -a` |
+| `-a` | `--authToken` | Optional authentication value supplied by a caller. | String. | No | `-pOut -pIn -pId` |
+| `-pId` | `--publicationId` | Optional publication identifier supplied by a caller. | String. | No | `-pOut -pIn -a` |
+
+Each output file retains the input name followed by `-Link.pdf`. The source PDF remains unchanged, while the temporary
+PNG used to construct the QR Code is removed after it has been embedded. The annotation content depends only on the
+caption and URL; `authToken` and `publicationId` are optional coordinating values and must be supplied together with
+explicit input and output paths.
 
 To provide an execution example, let's assume a scenario where there is a need to edit some files encoded in PDF format with the following prerequisites:
 
