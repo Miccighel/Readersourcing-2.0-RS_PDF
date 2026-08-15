@@ -6,7 +6,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>it.uniud.readersourcing2</groupId>
     <artifactId>RS_PDF</artifactId>
-    <version>v2.0.0</version>
+    <version>2.0.0</version>
 
     <organization>
         <name>University of Udine Medialab</name>
@@ -31,7 +31,6 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.main.class>it.uniud.readersourcing2.program.Program</project.main.class>
-        <project.fat.jar.name>RS_PDF-v2.0.0-shaded.jar</project.fat.jar.name>
         <maven.compiler.release>21</maven.compiler.release>
         <jvm.target>21</jvm.target>
         <kotlin.version>2.4.10</kotlin.version>
@@ -144,6 +143,7 @@
 
     <build>
 
+        <finalName>${project.artifactId}-v${project.version}</finalName>
         <sourceDirectory>src/main/kotlin</sourceDirectory>
         <testSourceDirectory>src/test/kotlin</testSourceDirectory>
 
@@ -226,8 +226,7 @@
                         </goals>
                         <configuration>
                             <createDependencyReducedPom>false</createDependencyReducedPom>
-                            <shadedArtifactAttached>true</shadedArtifactAttached>
-                            <shadedClassifierName>shaded</shadedClassifierName>
+                            <outputFile>${project.build.directory}/${project.artifactId}-v${project.version}-shaded.jar</outputFile>
                             <filters>
                                 <filter>
                                     <artifact>*:*</artifact>
